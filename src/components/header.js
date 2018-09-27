@@ -1,33 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import AppBar from '@material-ui/core/AppBar';
+import Image from "react-shimmer";
+import FoodnomeLogo from "../images/FoodnomeCarrot_WordOnly_White_TransparentBG_small.png"
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
+const Header = ({ siteTitle, themeColor }) =>  (
+  <AppBar style={{ background: themeColor, marginBottom: "1em" }} position="static">
+    <Link to="/">
+      <Image style={{ padding: 0, margin: 0 }} src={FoodnomeLogo} width={125} height={50} alt={`${siteTitle} Logo`}/>
+    </Link>
+  </AppBar>
 )
 
 export default Header

@@ -12,7 +12,8 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            title,
+            themeColor
           }
         }
       }
@@ -28,7 +29,9 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header 
+          siteTitle={data.site.siteMetadata.title}
+          themeColor={data.site.siteMetadata.themeColor} />
         <div
           style={{
             margin: '0 auto',

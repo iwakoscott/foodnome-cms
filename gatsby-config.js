@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
+    themeColor: "#ec008c"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
