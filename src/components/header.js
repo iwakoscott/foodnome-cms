@@ -39,7 +39,7 @@ class Header extends React.Component {
     const { themeColor, classes, siteTitle } = this.props;
     return (
       <header>
-        <AppBar style={{ background: themeColor, marginBottom: "1em", width: "100%" }} position="static">
+        <AppBar style={{ background: themeColor, width: "100%" }} position="static">
           <div className={classes.appBarInterior}>
             <Button onClick={this.handleToggle}>
               <FaBars style={{ margin: ".25rem" }} color="white" size={20}/>
