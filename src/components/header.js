@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Image from "react-shimmer";
-import FoodnomeLogo from "../images/FoodnomeCarrot_WordOnly_White_TransparentBG_small.png";
+import FoodnomeLogo from "../images/logos/FoodnomeCarrot_WordOnly_White_TransparentBG_small.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";

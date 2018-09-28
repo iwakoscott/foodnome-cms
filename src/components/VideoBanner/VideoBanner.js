@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import BannerVideo from "../../images/website-header.mp4";
-import BannerVideoStill from "../../images/banner-video-still.png";
+import BannerVideo from "../../images/other/website-header.mp4";
+import BannerVideoStill from "../../images/other/banner-video-still.png";
 import "./VideoBanner.css";
 
 const VideoContainer = styled.div`
