@@ -3,7 +3,8 @@ import { Link } from "gatsby";
 import Card from "@material-ui/core/Card";
 import Layout from "../components/layout";
 import VideoBanner from "../components/VideoBanner";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { StaticQuery, graphql } from "gatsby";
 
 import BlinkingApple from "../images/gifs/blinkeye.bc19101e.gif";
 import AppleEating from "../images/gifs/apple-eating.1730e376.gif";
@@ -14,8 +15,16 @@ const Container = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
-  background: red;
   padding: 0;
+  ${props =>
+    props.backgroundColor &&
+    css`
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23${props.backgroundColor.replace(
+        "#",
+        ""
+      )}' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    `};
 `;
 
 const CardImage = styled.img`
@@ -32,38 +41,52 @@ const CardContainer = styled(Card)`
 `;
 
 const IndexPage = () => (
-  <Layout>
-    <VideoBanner />
-    {/* How does it work ? */}
-    <Container>
-      <CardContainer>
-        <CardImage src={BlinkingApple} alt="blinking apple gif" />
-        <section>
-          <h3>Step 1. Browse</h3>
-          <p>
-            Search for food events near you. We are currently focused on Davis,
-            CA but will be expanding to your neighborhood soon.
-          </p>
-        </section>
-      </CardContainer>
-      <CardContainer>
-        <CardImage src={GrapeParty} alt="grape gif" />
-        <section>
-          <h3>Step 2. Reserve</h3>
-          <p>
-            Save a seat and pay by card. It's quick, easy, and totally secure.
-          </p>
-        </section>
-      </CardContainer>
-      <CardContainer>
-        <CardImage src={AppleEating} alt="appple eating gif" />
-        <section>
-          <h3>Step 3. Enjoy</h3>
-          <p>Eat bomb food with your friends and neighbors.</p>
-        </section>
-      </CardContainer>
-    </Container>
-  </Layout>
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            themeColor
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Layout>
+        <VideoBanner />
+        {/* How does it work ? */}
+        <Container backgroundColor={data.site.siteMetadata.themeColor}>
+          <CardContainer>
+            <CardImage src={BlinkingApple} alt="blinking apple gif" />
+            <section>
+              <h3>Step 1. Browse</h3>
+              <p>
+                Search for food events near you. We are currently focused on
+                Davis, CA but will be expanding to your neighborhood soon.
+              </p>
+            </section>
+          </CardContainer>
+          <CardContainer>
+            <CardImage src={GrapeParty} alt="grape gif" />
+            <section>
+              <h3>Step 2. Reserve</h3>
+              <p>
+                Save a seat and pay by card. It's quick, easy, and totally
+                secure.
+              </p>
+            </section>
+          </CardContainer>
+          <CardContainer>
+            <CardImage src={AppleEating} alt="appple eating gif" />
+            <section>
+              <h3>Step 3. Enjoy</h3>
+              <p>Eat bomb food with your friends and neighbors.</p>
+            </section>
+          </CardContainer>
+        </Container>
+      </Layout>
+    )}
+  />
 );
 
 export default IndexPage;
