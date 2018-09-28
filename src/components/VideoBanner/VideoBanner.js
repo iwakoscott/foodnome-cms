@@ -32,6 +32,7 @@ const HeroTextContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  margin: 0 0.5em;
 `;
 
 export default () => (
