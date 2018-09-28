@@ -24,6 +24,7 @@ const Container = styled.div`
         ""
       )}' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     `};
+  padding: 1em;
 `;
 
 const CardImage = styled.img`
@@ -53,7 +54,7 @@ const Title = styled.h2`
   text-decoration: underline;
 `;
 
-const IndexPage = () => (
+const IndexPage = ({ navigate }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -66,7 +67,7 @@ const IndexPage = () => (
     `}
     render={data => (
       <Layout>
-        <VideoBanner />
+        <VideoBanner navigate={navigate} />
         {/* How does it work ? */}
         <Container backgroundColor={data.site.siteMetadata.themeColor}>
           <Title>How it works</Title>

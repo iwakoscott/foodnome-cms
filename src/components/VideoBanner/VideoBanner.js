@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import BannerVideo from "../../images/other/website-header.mp4";
 import BannerVideoStill from "../../images/other/banner-video-still.png";
+import Button from "@material-ui/core/Button";
 import "./VideoBanner.css";
+import { FaChevronCircleRight } from "react-icons/fa";
 
 const VideoContainer = styled.div`
   position: relative;
@@ -36,13 +38,34 @@ const HeroTextContainer = styled.div`
   align-items: center;
 `;
 
-export default () => (
+export default ({ navigate }) => (
   <VideoContainer>
     <Video preload={"true"} autoPlay={true} muted={true} loop={true}>
       <source src={BannerVideo} poster={BannerVideoStill} type="video/mp4" />
     </Video>
     <HeroTextContainer>
-      <HeroText>{`We help Davis cooks crowdfund food events so everyone can enjoy delicious homemade meals.`}</HeroText>
+      <HeroText>
+        {`We help Davis cooks crowdfund food events so everyone can enjoy delicious homemade meals.`}
+        <Button
+          variant="outlined"
+          size="large"
+          onClick={() => navigate("/404")}
+          style={{
+            color: "white",
+            fontSize: "2rem"
+          }}>
+          Read our story
+          <FaChevronCircleRight
+            style={{
+              margin: ".25rem",
+              padding: ".25em",
+              verticalAlign: "middle"
+            }}
+            size={40}
+            color={"white"}
+          />
+        </Button>
+      </HeroText>
     </HeroTextContainer>
   </VideoContainer>
 );
