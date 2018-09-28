@@ -12,10 +12,9 @@ import GrapeParty from "../images/gifs/grape-party.87955635.gif";
 
 const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-evenly;
-  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   ${props =>
     props.backgroundColor &&
     css`
@@ -40,6 +39,20 @@ const CardContainer = styled(Card)`
   align-items: center;
 `;
 
+const Deck = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+`;
+
+const Title = styled.h2`
+  font-size: 2.75em;
+  margin: 1rem;
+  color: #2f3640;
+  text-decoration: underline;
+`;
+
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
@@ -56,33 +69,36 @@ const IndexPage = () => (
         <VideoBanner />
         {/* How does it work ? */}
         <Container backgroundColor={data.site.siteMetadata.themeColor}>
-          <CardContainer>
-            <CardImage src={BlinkingApple} alt="blinking apple gif" />
-            <section>
-              <h3>Step 1. Browse</h3>
-              <p>
-                Search for food events near you. We are currently focused on
-                Davis, CA but will be expanding to your neighborhood soon.
-              </p>
-            </section>
-          </CardContainer>
-          <CardContainer>
-            <CardImage src={GrapeParty} alt="grape gif" />
-            <section>
-              <h3>Step 2. Reserve</h3>
-              <p>
-                Save a seat and pay by card. It's quick, easy, and totally
-                secure.
-              </p>
-            </section>
-          </CardContainer>
-          <CardContainer>
-            <CardImage src={AppleEating} alt="appple eating gif" />
-            <section>
-              <h3>Step 3. Enjoy</h3>
-              <p>Eat bomb food with your friends and neighbors.</p>
-            </section>
-          </CardContainer>
+          <Title>How it works</Title>
+          <Deck>
+            <CardContainer>
+              <CardImage src={BlinkingApple} alt="blinking apple gif" />
+              <section>
+                <h3>Step 1. Browse</h3>
+                <p>
+                  Search for food events near you. We are currently focused on
+                  Davis, CA but will be expanding to your neighborhood soon.
+                </p>
+              </section>
+            </CardContainer>
+            <CardContainer>
+              <CardImage src={GrapeParty} alt="grape gif" />
+              <section>
+                <h3>Step 2. Reserve</h3>
+                <p>
+                  Save a seat and pay by card. It's quick, easy, and totally
+                  secure.
+                </p>
+              </section>
+            </CardContainer>
+            <CardContainer>
+              <CardImage src={AppleEating} alt="appple eating gif" />
+              <section>
+                <h3>Step 3. Enjoy</h3>
+                <p>Eat bomb food with your friends and neighbors.</p>
+              </section>
+            </CardContainer>
+          </Deck>
         </Container>
       </Layout>
     )}
