@@ -19,7 +19,7 @@ const styles = () => ({
     justifyContent: "flex-end",
     width: "100%"
   },
-  drawer: {
+  drawerBody: {
     padding: ".5rem"
   }
 });
@@ -67,7 +67,7 @@ class Header extends React.Component {
               <FaTimes size={20} />
             </Button>
           </div>
-          <div className={classes.drawer}>
+          <div className={classes.drawerBody}>
             <h1>Hello, world!</h1>
           </div>
         </Drawer>
