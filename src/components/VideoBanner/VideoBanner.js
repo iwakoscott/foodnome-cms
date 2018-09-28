@@ -19,11 +19,11 @@ const Video = styled.video`
 const HeroText = styled.h2`
   color: white;
   font-size: 3em;
+  max-width: 950px;
 `;
 
 const HeroTextContainer = styled.div`
   position: absolute;
-  text-align: center;
   top: 0;
   bottom: 0;
   left: 0;
@@ -31,6 +31,7 @@ const HeroTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
 `;
 
 export default () => (
