@@ -6,20 +6,22 @@ import "./VideoBanner.css";
 
 const VideoContainer = styled.div`
   position: relative;
+  height: 100vh;
   width: 100%;
-  height: 100%;
+  overflow: hidden;
 `;
 
 const Video = styled.video`
   object-fit: cover;
-  width: 100%;
   height: 100vh;
+  width: 100%;
 `;
 
 const HeroText = styled.h2`
   color: white;
   font-size: 3em;
   max-width: 950px;
+  margin: 0.5em;
 `;
 
 const HeroTextContainer = styled.div`
@@ -32,7 +34,6 @@ const HeroTextContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 0.5em;
 `;
 
 export default () => (
