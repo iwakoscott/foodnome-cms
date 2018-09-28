@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Varela Round"]
+        fonts: ["Varela Round", "Montserrat"]
       }
     },
     "gatsby-plugin-offline",
