@@ -45,6 +45,7 @@ const Deck = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
+  padding: 1em 0;
 `;
 
 const Title = styled.h2`
