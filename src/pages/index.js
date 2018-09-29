@@ -55,7 +55,7 @@ const Title = styled.h2`
   text-decoration: underline;
 `;
 
-const IndexPage = ({ navigate }) => (
+const IndexPage = ({ navigate, location }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -67,7 +67,7 @@ const IndexPage = ({ navigate }) => (
       }
     `}
     render={data => (
-      <Layout>
+      <Layout location={location}>
         <VideoBanner navigate={navigate} />
         {/* How does it work ? */}
         <Container backgroundColor={data.site.siteMetadata.themeColor}>

@@ -5,6 +5,7 @@ import BannerVideoStill from "../../images/other/banner-video-still.png";
 import Button from "@material-ui/core/Button";
 import "./VideoBanner.css";
 import { FaChevronCircleRight } from "react-icons/fa";
+import { Link } from "gatsby";
 
 const VideoContainer = styled.div`
   position: relative;
@@ -38,7 +39,7 @@ const HeroTextContainer = styled.div`
   align-items: center;
 `;
 
-export default ({ navigate }) => (
+export default ({}) => (
   <VideoContainer>
     <Video preload={"true"} autoPlay={true} muted={true} loop={true}>
       <source src={BannerVideo} poster={BannerVideoStill} type="video/mp4" />
@@ -49,7 +50,9 @@ export default ({ navigate }) => (
         <Button
           variant="outlined"
           size="large"
-          onClick={() => navigate("/404")}
+          component={Link}
+          to="/404"
+          state={{ from: "/" }}
           style={{
             color: "white",
             fontSize: "2rem"
