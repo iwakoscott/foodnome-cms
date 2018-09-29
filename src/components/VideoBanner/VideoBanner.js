@@ -6,6 +6,8 @@ import Button from "@material-ui/core/Button";
 import "./VideoBanner.css";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { Link } from "gatsby";
+import Image from "react-shimmer";
+import FoodnomeCarrot from "../../images/logos/FoodnomeCarrot_IconOnly_White_TransparentBG_small.png";
 
 const VideoContainer = styled.div`
   position: relative;
@@ -46,28 +48,38 @@ export default ({}) => (
     </Video>
     <HeroTextContainer>
       <HeroText>
-        {`We help Davis cooks crowdfund food events so everyone can enjoy delicious homemade meals.`}
-        <Button
-          variant="outlined"
-          size="large"
-          component={Link}
-          to="/404"
-          state={{ from: "/" }}
-          style={{
-            color: "white",
-            fontSize: "2rem"
-          }}>
-          Read our story
-          <FaChevronCircleRight
+        <Image
+          width={110}
+          height={110}
+          src={FoodnomeCarrot}
+          alt="Foodnome Carrot"
+        />
+        <div>
+          {`We help Davis cooks crowdfund food events so everyone can enjoy delicious homemade meals.`}
+        </div>
+        <div style={{ float: "right" }}>
+          <Button
+            variant="outlined"
+            size="large"
+            component={Link}
+            to="/404"
+            state={{ from: "/" }}
             style={{
-              margin: ".25rem",
-              padding: ".25em",
-              verticalAlign: "middle"
-            }}
-            size={40}
-            color={"white"}
-          />
-        </Button>
+              color: "white",
+              fontSize: "2rem"
+            }}>
+            Read our story
+            <FaChevronCircleRight
+              style={{
+                margin: ".25rem",
+                padding: ".25em",
+                verticalAlign: "middle"
+              }}
+              size={40}
+              color={"white"}
+            />
+          </Button>
+        </div>
       </HeroText>
     </HeroTextContainer>
   </VideoContainer>
