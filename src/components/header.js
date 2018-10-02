@@ -4,7 +4,13 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Image from "react-shimmer";
 import FoodnomeLogo from "../images/logos/FoodnomeCarrot_WordOnly_White_TransparentBG_small.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaInstagram,
+  FaPinterest,
+  FaFacebook
+} from "react-icons/fa";
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
 
@@ -20,7 +26,25 @@ const styles = () => ({
     width: "100%"
   },
   drawerBody: {
-    padding: ".5rem"
+    padding: ".5rem",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    flex: "1 auto"
+  },
+  iconWrapper: {
+    width: "100%",
+    maxWidth: "300px",
+    display: "flex",
+    justifyContent: "space-evenly",
+    margin: "1em 0"
+  },
+  drawer: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    flex: 1
   }
 });
 
@@ -62,13 +86,29 @@ class Header extends React.Component {
           </div>
         </AppBar>
         <Drawer open={this.state.open} onClose={this.handleToggle}>
-          <div className={classes.closeButtonWrapper}>
-            <Button onClick={this.handleToggle}>
-              <FaTimes size={20} />
-            </Button>
-          </div>
-          <div className={classes.drawerBody}>
-            <h1>Hello, world!</h1>
+          <div className={classes.drawer}>
+            <div className={classes.closeButtonWrapper}>
+              <Button onClick={this.handleToggle}>
+                <FaTimes size={20} />
+              </Button>
+            </div>
+            <div className={classes.drawerBody}>
+              <h1>Hello, world!</h1>
+            </div>
+            <div>
+              {/* Social Media Links here */}
+              <div className={classes.iconWrapper}>
+                <Button>
+                  <FaFacebook size={30} color={themeColor} />
+                </Button>
+                <Button>
+                  <FaInstagram size={30} color={themeColor} />
+                </Button>
+                <Button>
+                  <FaPinterest size={30} color={themeColor} />
+                </Button>
+              </div>
+            </div>
           </div>
         </Drawer>
       </header>
