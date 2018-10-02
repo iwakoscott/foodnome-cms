@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "Gatsby Default Starter",
-    themeColor: "#ec008c"
+    themeColor: "#ec008c",
+    facebookURL: "https://www.facebook.com/Foodnome/",
+    pinterestURL: "https://www.pinterest.com/foodnome/pins/",
+    instagramURL: "https://www.instagram.com/foodnome/"
   },
   plugins: [
     "gatsby-plugin-react-helmet",

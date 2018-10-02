@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
+import { StaticQuery, graphql } from "gatsby";
 
 const styles = () => ({
   appBarInterior: {
@@ -97,17 +98,44 @@ class Header extends React.Component {
             </div>
             <div>
               {/* Social Media Links here */}
-              <div className={classes.iconWrapper}>
-                <Button>
-                  <FaFacebook size={30} color={themeColor} />
-                </Button>
-                <Button>
-                  <FaInstagram size={30} color={themeColor} />
-                </Button>
-                <Button>
-                  <FaPinterest size={30} color={themeColor} />
-                </Button>
-              </div>
+              <StaticQuery
+                query={graphql`
+                  query SocialMediaLinks {
+                    site {
+                      siteMetadata {
+                        instagramURL
+                        facebookURL
+                        pinterestURL
+                      }
+                    }
+                  }
+                `}
+                render={data => (
+                  <div className={classes.iconWrapper}>
+                    <Button
+                      component={"a"}
+                      rel="noopener noreferrer"
+                      target="_BLANK"
+                      href={data.site.siteMetadata.facebookURL}>
+                      <FaFacebook size={30} color={themeColor} />
+                    </Button>
+                    <Button
+                      component={"a"}
+                      rel="noopener noreferrer"
+                      target="_BLANK"
+                      href={data.site.siteMetadata.instagramURL}>
+                      <FaInstagram size={30} color={themeColor} />
+                    </Button>
+                    <Button
+                      component={"a"}
+                      rel="noopener noreferrer"
+                      target="_BLANK"
+                      href={data.site.siteMetadata.pinterestURL}>
+                      <FaPinterest size={30} color={themeColor} />
+                    </Button>
+                  </div>
+                )}
+              />
             </div>
           </div>
         </Drawer>
