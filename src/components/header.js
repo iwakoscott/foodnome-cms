@@ -26,13 +26,6 @@ const styles = () => ({
     justifyContent: "flex-end",
     width: "100%"
   },
-  drawerBody: {
-    padding: ".5rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    flex: "1 auto"
-  },
   iconWrapper: {
     width: "100%",
     maxWidth: "300px",
@@ -45,7 +38,8 @@ const styles = () => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    flex: 1
+    flex: 1,
+    width: "300px"
   }
 });
 
@@ -93,7 +87,7 @@ class Header extends React.Component {
                 <FaTimes size={20} />
               </Button>
             </div>
-            <div className={classes.drawerBody}>
+            <div>
               <h1>Hello, world!</h1>
             </div>
             <div>
