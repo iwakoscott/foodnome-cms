@@ -48,7 +48,7 @@ function Press({ imageURL, width, height, alt, linkURL }) {
   );
 }
 
-export default ({ location, themeColor }) => (
+export default ({ themeColor }) => (
   <Footer themeColor={themeColor}>
     <div
       style={{
@@ -83,15 +83,9 @@ export default ({ location, themeColor }) => (
         )}
       />
       <LinksContainer>
-        <StyledLink state={{ from: location.pathname }} to="/privacy">
-          Privacy
-        </StyledLink>
-        <StyledLink state={{ from: location.pathname }} to="/tos">
-          Terms of Service
-        </StyledLink>
-        <StyledLink state={{ from: location.pathname }} to="/contact-us">
-          Contact Us
-        </StyledLink>
+        <StyledLink to="/privacy">Privacy</StyledLink>
+        <StyledLink to="/tos">Terms of Service</StyledLink>
+        <StyledLink to="/contact-us">Contact Us</StyledLink>
       </LinksContainer>
     </div>
   </Footer>

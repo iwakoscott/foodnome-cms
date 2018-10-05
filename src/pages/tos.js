@@ -1,30 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import { Dialog } from "@material-ui/core";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogContent from "@material-ui/core/DialogContent";
-import Button from "@material-ui/core/Button";
 import Layout from "../components/layout";
 
-const styles = () => ({
-  backLinkWrapper: {
-    textAlign: "right"
-  }
-});
-
-function TermsOfService({ classes, location, navigate }) {
-  const { from } = location.state || { from: "/" };
+function TermsOfService({ navigate }) {
   return (
-    <Layout location={location}>
+    <Layout>
       <Dialog
         aria-labelledby="terms-of-service-modal"
         maxWidth="md"
         fullWidth
         open={true}
-        onClose={() => navigate(from)}
-        className={classes.dialog}>
+        onClose={() => navigate("/")}>
         <DialogTitle id="terms-of-service-modal">Terms of Service</DialogTitle>
         <DialogContent>
           <DialogContentText>
@@ -431,13 +421,6 @@ function TermsOfService({ classes, location, navigate }) {
             . After 3 days have passed funds will be released to the event's
             associated host.
           </DialogContentText>
-          <div className={classes.backLinkWrapper}>
-            {from && (
-              <Button size="small" onClick={() => navigate(from)}>
-                back
-              </Button>
-            )}
-          </div>
         </DialogContent>
       </Dialog>
     </Layout>
@@ -445,8 +428,7 @@ function TermsOfService({ classes, location, navigate }) {
 }
 
 TermsOfService.propTypes = {
-  classes: PropTypes.object,
   history: PropTypes.object
 };
 
-export default withStyles(styles)(TermsOfService);
+export default TermsOfService;

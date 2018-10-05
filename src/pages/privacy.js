@@ -5,29 +5,23 @@ import { Dialog } from "@material-ui/core";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogContent from "@material-ui/core/DialogContent";
-import Button from "@material-ui/core/Button";
 import Layout from "../components/layout";
 
 const styles = () => ({
-  backLinkWrapper: {
-    textAlign: "right"
-  },
   list: {
     padding: "1em"
   }
 });
 
-function Privacy({ classes, location, navigate }) {
-  const { from } = location.state || { from: "/" };
+function Privacy({ classes, navigate }) {
   return (
-    <Layout location={location}>
+    <Layout>
       <Dialog
         aria-labelledby="privacy-policy-modal"
         maxWidth="md"
         fullWidth
         open={true}
-        onClose={() => navigate(from)}
-        className={classes.dialog}>
+        onClose={() => navigate("/")}>
         <DialogTitle id="privacy-policy-modal">Privacy Policy</DialogTitle>
         <DialogContent>
           <div>
@@ -95,14 +89,6 @@ function Privacy({ classes, location, navigate }) {
                 </DialogContentText>
               </li>
             </ul>
-          </div>
-
-          <div className={classes.backLinkWrapper}>
-            {from && (
-              <Button size="small" onClick={() => navigate(from)}>
-                back
-              </Button>
-            )}
           </div>
         </DialogContent>
       </Dialog>

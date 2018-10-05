@@ -7,7 +7,7 @@ import Header from "./header";
 import "./layout.css";
 import Footer from "./footer";
 
-const Layout = ({ children, location }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -47,10 +47,7 @@ const Layout = ({ children, location }) => (
             }}>
             {children}
           </div>
-          <Footer
-            location={location}
-            themeColor={data.site.siteMetadata.themeColor}
-          />
+          <Footer themeColor={data.site.siteMetadata.themeColor} />
         </div>
       </>
     )}
