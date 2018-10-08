@@ -73,7 +73,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-styled-components`,
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
@@ -99,6 +98,7 @@ module.exports = {
       options: {
         pathToConfigModule: "src/utils/typography.js"
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ]
 };

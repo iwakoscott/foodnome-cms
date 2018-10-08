@@ -24,7 +24,6 @@ const Container = styled.div`
         ""
       )}' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     `};
-  padding: 1em;
 `;
 
 const CardImage = styled.img`
@@ -45,11 +44,12 @@ const Deck = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
-  padding: 1em 0;
+  text-align: center;
+  margin-bottom: 44px;
 `;
 
 const Title = styled.h2`
-  font-size: 2.75em;
+  font-size: 1.5em;
   margin: 1rem;
   color: #2f3640;
   text-decoration: underline;

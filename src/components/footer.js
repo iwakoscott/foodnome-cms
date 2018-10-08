@@ -4,6 +4,10 @@ import { Link } from "gatsby";
 import { StaticQuery, graphql } from "gatsby";
 
 const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   ${props =>
     props.themeColor &&
     css`
@@ -15,8 +19,9 @@ const LinksContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 600px;
   width: 100%;
+  padding: 0 0 2em;
+  max-width: 600px;
 `;
 
 const StyledLink = styled(Link)`
@@ -30,6 +35,7 @@ const PressContainer = styled.div`
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
+  padding: 2em 0;
 `;
 
 const PressLogo = styled.img`
@@ -49,15 +55,8 @@ function Press({ imageURL, width, height, alt, linkURL }) {
 }
 
 export default ({ themeColor }) => (
-  <Footer themeColor={themeColor}>
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "2em 0"
-      }}>
+  <div>
+    <Footer themeColor={themeColor}>
       <StaticQuery
         query={graphql`
           query SitePressLogos {
@@ -87,6 +86,6 @@ export default ({ themeColor }) => (
         <StyledLink to="/tos">Terms of Service</StyledLink>
         <StyledLink to="/contact-us">Contact Us</StyledLink>
       </LinksContainer>
-    </div>
-  </Footer>
+    </Footer>
+  </div>
 );
