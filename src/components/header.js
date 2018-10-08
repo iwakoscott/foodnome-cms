@@ -35,8 +35,36 @@ const styles = () => ({
     justifyContent: "space-between",
     flex: 1,
     width: "300px"
+  },
+  link: {
+    color: "black",
+    textDecoration: "none",
+    fontSize: "1.25em",
+    margin: ".5em 0"
+  },
+  links: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  mainLogo: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "center"
   }
 });
+
+const getRoutes = () => [
+  {
+    to: "/blog",
+    name: "Blog"
+  },
+  {
+    to: "/apply",
+    name: "Apply to be a Cook!"
+  }
+];
 
 class Header extends React.Component {
   constructor(props) {
@@ -57,12 +85,7 @@ class Header extends React.Component {
             <Button onClick={this.handleToggle}>
               <FaBars style={{ margin: ".25rem" }} color="white" size={20} />
             </Button>
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center"
-              }}>
+            <div className={classes.mainLogo}>
               <Link to="/">
                 <Image
                   style={{ padding: 0, margin: 0 }}
@@ -83,8 +106,12 @@ class Header extends React.Component {
                 iconProps={{ size: 20 }}
               />
             </div>
-            <div>
-              <h1>Hello, world!</h1>
+            <div className={classes.links}>
+              {getRoutes().map((route, index) => (
+                <Link className={classes.link} key={index} to={route.to}>
+                  {route.name}
+                </Link>
+              ))}
             </div>
             <div>
               {/* Social Media Links here */}
