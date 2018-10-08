@@ -5,16 +5,19 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogContent from "@material-ui/core/DialogContent";
 import Layout from "../components/layout";
+import { CloseButton } from "../components/Buttons";
 
 function TermsOfService({ navigate }) {
   return (
     <Layout>
-      <Dialog
-        aria-labelledby="terms-of-service-modal"
-        maxWidth="md"
-        fullWidth
-        open={true}
-        onClose={() => navigate("/")}>
+      <Dialog fullScreen aria-labelledby="terms-of-service-modal" open={true}>
+        <div style={{ width: "100%" }}>
+          <CloseButton
+            style={{ width: "min-content", float: "right" }}
+            iconProps={{ size: 20 }}
+            onClick={() => navigate("/")}
+          />
+        </div>
         <DialogTitle id="terms-of-service-modal">Terms of Service</DialogTitle>
         <DialogContent>
           <DialogContentText>

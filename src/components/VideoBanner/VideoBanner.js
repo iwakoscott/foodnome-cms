@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BannerVideo from "../../images/other/website-header.mp4";
 import BannerVideoStill from "../../images/other/banner-video-still.png";
+import FallbackImage from "../../images/other/fallback.png";
 import Button from "@material-ui/core/Button";
 import "./VideoBanner.css";
 import { FaChevronCircleRight } from "react-icons/fa";
@@ -27,6 +28,10 @@ const HeroText = styled.h2`
   font-size: 3em;
   max-width: 950px;
   margin: 0.5em;
+
+  @media (max-width: 430px) {
+    font-size: 1.5em;
+  }
 `;
 
 const HeroTextContainer = styled.div`
@@ -41,16 +46,35 @@ const HeroTextContainer = styled.div`
   align-items: center;
 `;
 
-export default ({}) => (
+const ButtonText = styled.span`
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 2em;
+
+  @media (max-width: 430px) {
+    font-size: 1em;
+  }
+`;
+
+export default () => (
   <VideoContainer>
-    <Video preload={"true"} autoPlay={true} muted={true} loop={true}>
-      <source src={BannerVideo} poster={BannerVideoStill} type="video/mp4" />
+    <Video
+      loop={true}
+      muted={true}
+      playsinline={true}
+      autoPlay={true}
+      poster={FallbackImage}
+      // preload={"true"}
+    >
+      <source src={BannerVideo} type="video/mp4" />
+      <img src={FallbackImage} />
     </Video>
     <HeroTextContainer>
       <HeroText>
         <Image
-          width={110}
-          height={110}
+          width={100}
+          height={100}
           src={FoodnomeCarrot}
           alt="Foodnome Carrot"
         />
@@ -59,25 +83,13 @@ export default ({}) => (
         </div>
         <div style={{ float: "right" }}>
           <Button
+            style={{ margin: "0.5rem" }}
             variant="outlined"
             size="large"
             component={Link}
-            to="/404"
-            state={{ from: "/" }}
-            style={{
-              color: "white",
-              fontSize: "2rem"
-            }}>
-            Read our story
-            <FaChevronCircleRight
-              style={{
-                margin: ".25rem",
-                padding: ".25em",
-                verticalAlign: "middle"
-              }}
-              size={40}
-              color={"white"}
-            />
+            to="/404">
+            <ButtonText>Read our story</ButtonText>
+            <FaChevronCircleRight color={"white"} style={{ margin: ".5rem" }} />
           </Button>
         </div>
       </HeroText>

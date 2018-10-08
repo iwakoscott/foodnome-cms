@@ -1,5 +1,5 @@
 video::-webkit-media-controls-overlay-play-button {
-  display: none;
+  display: none !important;
 }
 
 *::-webkit-media-controls-panel {
@@ -9,10 +9,10 @@ video::-webkit-media-controls-overlay-play-button {
 
 *::-webkit-media-controls-play-button {
   display: none !important;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 
 *::-webkit-media-controls-start-playback-button {
   display: none !important;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }

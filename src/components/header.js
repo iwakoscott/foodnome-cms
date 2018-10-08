@@ -4,16 +4,11 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Image from "react-shimmer";
 import FoodnomeLogo from "../images/logos/FoodnomeCarrot_WordOnly_White_TransparentBG_small.png";
-import {
-  FaBars,
-  FaTimes,
-  FaInstagram,
-  FaPinterest,
-  FaFacebook
-} from "react-icons/fa";
+import { FaBars, FaInstagram, FaPinterest, FaFacebook } from "react-icons/fa";
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
 import { StaticQuery, graphql } from "gatsby";
+import { CloseButton } from "./Buttons";
 
 const styles = () => ({
   appBarInterior: {
@@ -83,9 +78,10 @@ class Header extends React.Component {
         <Drawer open={this.state.open} onClose={this.handleToggle}>
           <div className={classes.drawer}>
             <div className={classes.closeButtonWrapper}>
-              <Button onClick={this.handleToggle}>
-                <FaTimes size={20} />
-              </Button>
+              <CloseButton
+                onClick={this.handleToggle}
+                iconProps={{ size: 20 }}
+              />
             </div>
             <div>
               <h1>Hello, world!</h1>

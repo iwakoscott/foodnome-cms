@@ -6,6 +6,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogContent from "@material-ui/core/DialogContent";
 import Layout from "../components/layout";
+import { CloseButton } from "../components/Buttons";
 
 const styles = () => ({
   list: {
@@ -16,12 +17,14 @@ const styles = () => ({
 function Privacy({ classes, navigate }) {
   return (
     <Layout>
-      <Dialog
-        aria-labelledby="privacy-policy-modal"
-        maxWidth="md"
-        fullWidth
-        open={true}
-        onClose={() => navigate("/")}>
+      <Dialog aria-labelledby="privacy-policy-modal" fullScreen open={true}>
+        <div style={{ width: "100%" }}>
+          <CloseButton
+            style={{ width: "min-content", float: "right" }}
+            iconProps={{ size: 20 }}
+            onClick={() => navigate("/")}
+          />
+        </div>
         <DialogTitle id="privacy-policy-modal">Privacy Policy</DialogTitle>
         <DialogContent>
           <div>
