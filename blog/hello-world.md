@@ -3,5 +3,4 @@ path: /blog/hello-world
 date: 2018-10-09T01:19:15.274Z
 title: 'Hello, world!'
 ---
-* ![My Apple! ](/assets/fuji.png)
-  This is pretty cool!
+This is not a drill!
