@@ -13,9 +13,9 @@ For a recent Foodnome catering event for the organization Sustainable Living and
 
 Although Davis is located amidst miles of farmland, 20 minutes from the self-proclaimed “farm-to-fork capital” Sacramento, it is surprisingly hard to access fresh and interesting food. Three of the most central, profitable restaurants in town — Crepeville, Burgers and Brew, and El Toro Bravo — are all owned by one family. Of the new restaurants that have opened in the past five years, almost all are chains like Blondie’s, Halal Guys, and Habit Burger.
 
-<figure>
-</figure>
 Zhang says this is due to high starting costs of entering the food business, and lack of accessible and affordable commissary kitchens. A commissary kitchen is a food safe kitchen that can be rented by multiple chefs to legally sell food. Chefs using commissary kitchens need to bring their own health permit, ship ingredients and food across town, and often plan the dates they want to rent months in advance. For a working single mom like Zhang, the costs and logistics coordination makes starting a food business incredibly difficult.
+
+
 
 Foodnome provides an accessible platform for chefs to set up their own kitchens to meet health standards, then start to make a name for themselves at dinner parties, informal cafes, and catering events.
 
