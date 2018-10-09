@@ -15,6 +15,8 @@ In 2014 Manning started Michael Manning Wellness, where he coaches people with n
 
 For Manning, Foodnome was an opportunity to reach potential clients while spreading his message of holistic healthy eating. Manning cooked for Foodnome as one of five featured chefs catering the Rocknasium Crank-In event. As climbers from around northern California scaled the walls of the West Coast’s oldest climbing gym, Michael served up a cucumber, fennel, and apple salad, along with a side of nutrition education.
 
+![Michael Scooping Salad](/assets/michael-manning-1.jpeg)
+
 “You want to use high-quality fat with your vegetables, to access certain nutrients more easily,” he explained. “If you have your salad with extra virgin olive oil, or your veggies in grass-fed butter, you gain the benefits of the quality fat, and also the plant chemicals such as fat-soluble vitamins and polyphenols more readily. Improving your nutrition easily translates to weight loss, improved digestion, improved memory, and overall health and well-being.”
 
 Manning doesn’t endorse any particular diet, but encourages his clients to be faithful to the diet or plan of their choice.
@@ -24,3 +26,5 @@ Manning doesn’t endorse any particular diet, but encourages his clients to be 
 Manning hopes to continue to use Foodnome as an educational platform, possibly doing more nutrition-focused cooking classes in the future. For now, he is expanding his business to include more online and remote consultations.
 
 To learn more about Michael Manning’s nutrition philosophy and business, visit https://www.michaelmanningwellness.com/
+
+![Dish](/assets/michael-manning-3.jpeg)
