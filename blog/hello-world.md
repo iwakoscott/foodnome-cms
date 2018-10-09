@@ -3,11 +3,11 @@ path: /blog/chef-spotlight/michael-manning
 date: 2018-10-09T01:19:15.274Z
 title: 'Chef Spotlight: Michael Manning'
 ---
+![](/assets/michael-manning.jpeg)
+
 Chef and nutritionist Michael Manning uses Foodnome as an educational and business platform to help people feel better, one well-planned meal at a time.
 
 Manning was working as an EMT when he had an epiphany that nutrition was the best way for him to combine his love of education and passion about healthy living.
-
-![Michael Manning](/assets/michael-manning.jpeg)
 
 “I realized I could help other people, not only when they got sick and injured, but also before. It was a really powerful moment,” he said.
 
