@@ -39,13 +39,7 @@ const Layout = ({ children }) => (
             siteTitle={data.site.siteMetadata.title}
             themeColor={data.site.siteMetadata.themeColor}
           />
-          <div
-            style={{
-              margin: "0 auto",
-              paddingTop: 0
-            }}>
-            {children}
-          </div>
+          <div>{children}</div>
           <Footer themeColor={data.site.siteMetadata.themeColor} />
         </div>
       </>
