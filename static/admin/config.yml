@@ -1,5 +1,6 @@
 backend:
-  name: foodnome-cms
+  name: github
+  repo: iwakoscott/foodnome-cms
 
 media_folder: static/assets
 public_folder: assets
