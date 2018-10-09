@@ -1,6 +1,6 @@
 ---
 path: /blog/cease-and-desist
-date: 2018-10-09T22:20:31.786Z
+date: 2018-08-26T22:20:31.786Z
 title: What’s a Cease and Desist After All?
 ---
 
