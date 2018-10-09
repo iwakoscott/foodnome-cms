@@ -4,6 +4,21 @@ import Layout from "../components/layout";
 import { MainContainer } from "../components/Containers";
 import Card from "@material-ui/core/Card";
 import { LinkButton } from "../components/Buttons";
+import styled from "styled-components";
+
+const CardTitle = styled.h2`
+  font-size: 2em;
+  @media (max-width: 400px), (max-height: 400px) {
+    font-size: 1.5em;
+  }
+`;
+
+const Date = styled.h3`
+  font-size: 1.5em;
+  @media (max-width: 400px), (max-height: 400px) {
+    font-size: 1.25em;
+  }
+`;
 
 export default function Blog({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
@@ -15,14 +30,14 @@ export default function Blog({ data }) {
           .map(({ node: post }) => {
             return (
               <Card key={post.id} style={{ padding: "1em", margin: ".5rem 0" }}>
-                <h1>
+                <CardTitle>
                   <Link
                     to={post.frontmatter.path}
                     style={{ textDecoration: "none", color: "black" }}>
                     {post.frontmatter.title}
                   </Link>
-                </h1>
-                <h2>{post.frontmatter.date}</h2>
+                </CardTitle>
+                <Date>{post.frontmatter.date}</Date>
                 <p>{post.excerpt}</p>
                 <LinkButton
                   style={{ float: "right" }}
