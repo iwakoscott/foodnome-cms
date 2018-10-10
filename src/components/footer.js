@@ -48,7 +48,7 @@ const PressLogoLink = styled.a`
 
 function Press({ imageURL, width, height, alt, linkURL }) {
   return (
-    <PressLogoLink href={linkURL} el="noopener noreferrer" target="_BLANK">
+    <PressLogoLink href={linkURL} rel="noopener noreferrer" target="_BLANK">
       <PressLogo width={width} height={height} src={imageURL} alt={alt} />
     </PressLogoLink>
   );

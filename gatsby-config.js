@@ -2,9 +2,11 @@ module.exports = {
   siteMetadata: {
     title: "Foodnome",
     themeColor: "#ec008c",
+    email: "info@foodnome.com",
     facebookURL: "https://www.facebook.com/Foodnome/",
     pinterestURL: "https://www.pinterest.com/foodnome/pins/",
     instagramURL: "https://www.instagram.com/foodnome/",
+    linkedInURL: "https://www.linkedin.com/company/18274627/",
     pressLogos: [
       {
         width: 256,
