@@ -54,7 +54,7 @@ function Press({ imageURL, width, height, alt, linkURL }) {
   );
 }
 
-export default ({ themeColor }) => (
+export default ({ themeColor, location }) => (
   <div>
     <Footer themeColor={themeColor}>
       <StaticQuery
@@ -82,9 +82,15 @@ export default ({ themeColor }) => (
         )}
       />
       <LinksContainer>
-        <StyledLink to="/privacy">Privacy</StyledLink>
-        <StyledLink to="/tos">Terms of Service</StyledLink>
-        <StyledLink to="/contact-us">Contact Us</StyledLink>
+        <StyledLink state={{ from: location.pathname }} to="/privacy">
+          Privacy
+        </StyledLink>
+        <StyledLink state={{ from: location.pathname }} to="/tos">
+          Terms of Service
+        </StyledLink>
+        <StyledLink state={{ from: location.pathname }} to="/contact-us">
+          Contact Us
+        </StyledLink>
       </LinksContainer>
     </Footer>
   </div>

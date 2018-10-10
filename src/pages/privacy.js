@@ -22,7 +22,7 @@ function Privacy({ classes, ...rest }) {
           <CloseButton
             style={{ width: "min-content", float: "right" }}
             iconProps={{ size: 20 }}
-            onClick={() => rest.navigate("/")}
+            onClick={() => rest.navigate(rest.location.state.from)}
           />
         </div>
         <DialogTitle id="privacy-policy-modal">Privacy Policy</DialogTitle>

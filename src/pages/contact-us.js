@@ -35,7 +35,7 @@ function ContactUs({ classes, ...rest }) {
             <Dialog
               aria-labelledby="contact-us-modal"
               open={true}
-              onClose={() => rest.navigate("/")}
+              onClose={() => rest.navigate(rest.location.state.from)}
               className={classes.dialog}>
               <DialogTitle id="contact-us-modal">Contact Us</DialogTitle>
               <DialogContent>

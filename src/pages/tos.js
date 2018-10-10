@@ -15,7 +15,7 @@ function TermsOfService(props) {
           <CloseButton
             style={{ width: "min-content", float: "right" }}
             iconProps={{ size: 20 }}
-            onClick={() => props.navigate("/")}
+            onClick={() => props.navigate(props.location.state.from)}
           />
         </div>
         <DialogTitle id="terms-of-service-modal">Terms of Service</DialogTitle>
