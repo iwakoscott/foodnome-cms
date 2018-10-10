@@ -31,42 +31,40 @@ function ContactUs({ classes, navigate }) {
       `}
       render={data => (
         <Layout>
-          <Dialog
-            aria-labelledby="contact-us-modal"
-            fullWidth
-            maxWidth="xs"
-            open={true}
-            onClose={() => navigate("/")}
-            className={classes.dialog}>
-            <DialogTitle id="contact-us-modal">Contact Us</DialogTitle>
-            <DialogContent>
-              <DialogContentText>
-                Have any questions about becoming a host? Care to help us
-                improve our service? We'd love to hear from you!
-              </DialogContentText>
-              <DialogContentText>
-                Email us at{" "}
-                <a
-                  style={{ color: "black" }}
-                  href={`mailto:${data.site.siteMetadata.email}`}>
-                  {data.site.siteMetadata.email}
-                </a>{" "}
-                and connect with us on
-              </DialogContentText>
-              <div className={classes.iconWrapper}>
-                <a
-                  rel="noopener noreferrer"
-                  target="_BLANK"
-                  href={data.site.siteMetadata.linkedInURL}
-                  className={classes.icon}>
-                  <FaLinkedin
-                    size={40}
-                    color={data.site.siteMetadata.themeColor}
-                  />
-                </a>
-              </div>
-            </DialogContent>
-          </Dialog>
+          <div style={{ height: "100vh" }}>
+            <Dialog
+              aria-labelledby="contact-us-modal"
+              open={true}
+              onClose={() => navigate("/")}
+              className={classes.dialog}>
+              <DialogTitle id="contact-us-modal">Contact Us</DialogTitle>
+              <DialogContent>
+                <DialogContentText>
+                  Have any questions about becoming a host? Care to help us
+                  improve our service? We'd love to hear from you!
+                </DialogContentText>
+                <DialogContentText>
+                  Email us at{" "}
+                  <a
+                    style={{ color: "black" }}
+                    href={`mailto:${data.site.siteMetadata.email}`}>
+                    {data.site.siteMetadata.email}
+                  </a>{" "}
+                  and connect with us on{" "}
+                  <a
+                    rel="noopener noreferrer"
+                    target="_BLANK"
+                    href={data.site.siteMetadata.linkedInURL}>
+                    <span>LinkedIn</span>
+                    <FaLinkedin
+                      color={data.site.siteMetadata.themeColor}
+                      style={{ verticalAlign: "middle", marginLeft: ".25rem" }}
+                    />
+                  </a>
+                </DialogContentText>
+              </DialogContent>
+            </Dialog>
+          </div>
         </Layout>
       )}
     />
