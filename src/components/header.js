@@ -56,6 +56,7 @@ const styles = () => ({
 });
 
 const getRoutes = () => [
+  { to: "/", name: "Home" },
   {
     to: "/blog",
     name: "Blog"
