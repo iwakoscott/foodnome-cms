@@ -58,7 +58,7 @@ const Title = styled.h2`
   }
 `;
 
-const IndexPage = ({ navigate, location }) => (
+const IndexPage = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -70,8 +70,8 @@ const IndexPage = ({ navigate, location }) => (
       }
     `}
     render={data => (
-      <Layout location={location}>
-        <VideoBanner navigate={navigate} />
+      <Layout {...props}>
+        <VideoBanner navigate={props.navigate} />
         {/* How does it work ? */}
         <Container backgroundColor={data.site.siteMetadata.themeColor}>
           <Title>How it works</Title>

@@ -14,15 +14,15 @@ const styles = () => ({
   }
 });
 
-function Privacy({ classes, navigate }) {
+function Privacy({ classes, ...rest }) {
   return (
-    <Layout>
+    <Layout {...rest}>
       <Dialog aria-labelledby="privacy-policy-modal" fullScreen open={true}>
         <div style={{ width: "100%" }}>
           <CloseButton
             style={{ width: "min-content", float: "right" }}
             iconProps={{ size: 20 }}
-            onClick={() => navigate("/")}
+            onClick={() => rest.navigate("/")}
           />
         </div>
         <DialogTitle id="privacy-policy-modal">Privacy Policy</DialogTitle>

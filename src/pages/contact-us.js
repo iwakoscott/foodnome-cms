@@ -15,7 +15,7 @@ const styles = () => ({
   }
 });
 
-function ContactUs({ classes, navigate }) {
+function ContactUs({ classes, ...rest }) {
   return (
     <StaticQuery
       query={graphql`
@@ -30,12 +30,12 @@ function ContactUs({ classes, navigate }) {
         }
       `}
       render={data => (
-        <Layout>
+        <Layout {...rest}>
           <div style={{ height: "100vh" }}>
             <Dialog
               aria-labelledby="contact-us-modal"
               open={true}
-              onClose={() => navigate("/")}
+              onClose={() => rest.navigate("/")}
               className={classes.dialog}>
               <DialogTitle id="contact-us-modal">Contact Us</DialogTitle>
               <DialogContent>

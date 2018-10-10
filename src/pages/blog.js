@@ -20,10 +20,10 @@ const Date = styled.h3`
   }
 `;
 
-export default function Blog({ data }) {
+export default function Blog({ data, ...rest }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <Layout>
+    <Layout {...rest}>
       <MainContainer>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)

@@ -7,15 +7,15 @@ import DialogContent from "@material-ui/core/DialogContent";
 import Layout from "../components/layout";
 import { CloseButton } from "../components/Buttons";
 
-function TermsOfService({ navigate }) {
+function TermsOfService(props) {
   return (
-    <Layout>
+    <Layout {...props}>
       <Dialog fullScreen aria-labelledby="terms-of-service-modal" open={true}>
         <div style={{ width: "100%" }}>
           <CloseButton
             style={{ width: "min-content", float: "right" }}
             iconProps={{ size: 20 }}
-            onClick={() => navigate("/")}
+            onClick={() => props.navigate("/")}
           />
         </div>
         <DialogTitle id="terms-of-service-modal">Terms of Service</DialogTitle>

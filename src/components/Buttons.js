@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import { FaTimes, FaAngleDoubleRight } from "react-icons/fa";
 import { Link } from "gatsby";
+import ButtonBase from "@material-ui/core/ButtonBase";
 
 export function CloseButton({ onClick, iconProps, ...rest }) {
   return (
@@ -17,5 +18,13 @@ export function LinkButton({ to, iconProps, children, ...rest }) {
       <span>{children}</span>
       <FaAngleDoubleRight {...iconProps} />
     </Button>
+  );
+}
+
+export function TextButton({ onClick, children, ...rest }) {
+  return (
+    <ButtonBase onClick={onClick} {...rest}>
+      {children}
+    </ButtonBase>
   );
 }

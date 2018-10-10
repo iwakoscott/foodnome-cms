@@ -7,7 +7,7 @@ import FoodnomeLogo from "../images/logos/FoodnomeCarrot_WordOnly_White_Transpar
 import { FaBars, FaInstagram, FaPinterest, FaFacebook } from "react-icons/fa";
 import Button from "@material-ui/core/Button";
 import { StaticQuery, graphql } from "gatsby";
-import { CloseButton } from "./Buttons";
+import { CloseButton, TextButton } from "./Buttons";
 import Drawer from "@material-ui/core/Drawer";
 
 const styles = () => ({
@@ -77,6 +77,11 @@ class Header extends React.Component {
 
   handleToggle = () => this.setState(({ open }) => ({ open: !open }));
 
+  handleLinkClick = route => {
+    this.handleToggle();
+    this.props.navigate(route);
+  };
+
   render() {
     const { themeColor, classes, siteTitle } = this.props;
     return (
@@ -109,13 +114,12 @@ class Header extends React.Component {
             </div>
             <div className={classes.links}>
               {getRoutes().map((route, index) => (
-                <Link
-                  className={classes.link}
+                <TextButton
+                  style={{ margin: "1em 0" }}
                   key={index}
-                  to={route.to}
-                  onClick={this.handleToggle}>
+                  onClick={() => this.handleLinkClick(route.to)}>
                   {route.name}
-                </Link>
+                </TextButton>
               ))}
             </div>
             <div>
