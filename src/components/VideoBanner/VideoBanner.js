@@ -29,8 +29,8 @@ const HeroText = styled.h2`
   max-width: 950px;
   margin: 0.5em;
 
-  @media (max-width: 430px) {
-    font-size: 1.5em;
+  @media (max-width: 430px), (max-height: 430px) {
+    font-size: 1.25em;
   }
 `;
 
@@ -52,7 +52,7 @@ const ButtonText = styled.span`
   color: white;
   font-size: 2em;
 
-  @media (max-width: 430px) {
+  @media (max-width: 430px), (max-height: 430px) {
     font-size: 1em;
   }
 `;
