@@ -6,9 +6,9 @@ import Image from "react-shimmer";
 import FoodnomeLogo from "../images/logos/FoodnomeCarrot_WordOnly_White_TransparentBG_small.png";
 import { FaBars, FaInstagram, FaPinterest, FaFacebook } from "react-icons/fa";
 import Button from "@material-ui/core/Button";
-import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import { StaticQuery, graphql } from "gatsby";
 import { CloseButton } from "./Buttons";
+import Drawer from "@material-ui/core/Drawer";
 
 const styles = () => ({
   appBarInterior: {
@@ -76,10 +76,6 @@ class Header extends React.Component {
 
   handleToggle = () => this.setState(({ open }) => ({ open: !open }));
 
-  handleOpen = () => this.setState({ open: true });
-
-  handleClose = () => this.setState({ open: false });
-
   render() {
     const { themeColor, classes, siteTitle } = this.props;
     return (
@@ -102,10 +98,7 @@ class Header extends React.Component {
             </div>
           </div>
         </AppBar>
-        <SwipeableDrawer
-          open={this.state.open}
-          onClose={this.handleClose}
-          onOpen={this.handleOpen}>
+        <Drawer open={this.state.open} onClose={this.handleToggle}>
           <div className={classes.drawer}>
             <div className={classes.closeButtonWrapper}>
               <CloseButton
@@ -162,7 +155,7 @@ class Header extends React.Component {
               />
             </div>
           </div>
-        </SwipeableDrawer>
+        </Drawer>
       </header>
     );
   }
