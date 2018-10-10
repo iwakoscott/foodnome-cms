@@ -108,7 +108,11 @@ class Header extends React.Component {
             </div>
             <div className={classes.links}>
               {getRoutes().map((route, index) => (
-                <Link className={classes.link} key={index} to={route.to}>
+                <Link
+                  className={classes.link}
+                  key={index}
+                  to={route.to}
+                  onClick={this.handleToggle}>
                   {route.name}
                 </Link>
               ))}
