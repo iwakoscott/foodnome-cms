@@ -78,7 +78,7 @@ class Header extends React.Component {
 
   handleScroll = () => {
     const scrollPos = window.pageYOffset;
-    if (scrollPos <= 10) {
+    if (scrollPos <= 56) {
       this.setState({
         transparent: true
       });
@@ -91,7 +91,7 @@ class Header extends React.Component {
 
   componentDidMount() {
     if (this.props.location.pathname === "/") {
-      if (window.pageYOffset <= 10) {
+      if (window.pageYOffset <= 56) {
         this.setState({
           transparent: true
         });
@@ -126,7 +126,7 @@ class Header extends React.Component {
                 : themeColor
               : themeColor,
             width: "100%",
-            transition: "all 300ms ease-out",
+            transition: "all 300ms ease-in-out",
             boxShadow: transparent ? "none" : "auto"
           }}>
           <div className={classes.appBarInterior}>
