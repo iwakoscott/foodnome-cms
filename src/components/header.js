@@ -71,8 +71,37 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      open: false,
+      transparent: false
     };
+  }
+
+  handleScroll = () => {
+    const scrollPos = window.pageYOffset;
+    if (scrollPos <= 10) {
+      this.setState({
+        transparent: true
+      });
+    } else {
+      this.setState({
+        transparent: false
+      });
+    }
+  };
+
+  componentDidMount() {
+    if (this.props.location.pathname === "/") {
+      if (window.pageYOffset <= 10) {
+        this.setState({
+          transparent: true
+        });
+      }
+    }
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleToggle = () => this.setState(({ open }) => ({ open: !open }));
@@ -83,10 +112,23 @@ class Header extends React.Component {
   };
 
   render() {
-    const { themeColor, classes, siteTitle } = this.props;
+    const { themeColor, classes, siteTitle, location } = this.props;
+    const { transparent } = this.state;
+    const atHome = location.pathname === "/";
+
     return (
       <header>
-        <AppBar style={{ background: themeColor, width: "100%" }}>
+        <AppBar
+          style={{
+            background: atHome
+              ? transparent
+                ? "transparent"
+                : themeColor
+              : themeColor,
+            width: "100%",
+            transition: "all 300ms ease-out",
+            boxShadow: transparent ? "none" : "auto"
+          }}>
           <div className={classes.appBarInterior}>
             <Button onClick={this.handleToggle}>
               <FaBars style={{ margin: ".25rem" }} color="white" size={20} />

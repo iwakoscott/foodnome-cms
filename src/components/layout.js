@@ -38,7 +38,7 @@ const Layout = ({ children, ...rest }) => (
           <Header
             siteTitle={data.site.siteMetadata.title}
             themeColor={data.site.siteMetadata.themeColor}
-            navigate={rest.navigate}
+            {...rest}
           />
           <div>{children}</div>
           <Footer themeColor={data.site.siteMetadata.themeColor} {...rest} />
