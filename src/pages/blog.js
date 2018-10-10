@@ -29,7 +29,7 @@ export default function Blog({ data }) {
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <Card key={post.id} style={{ padding: "1em", margin: ".5rem 0" }}>
+              <Card key={post.id} style={{ padding: "1em", margin: "1em 0" }}>
                 <CardTitle>
                   <Link
                     to={post.frontmatter.path}
