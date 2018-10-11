@@ -79,7 +79,7 @@ export default () => (
           alt="Foodnome Carrot"
         />
         <div>
-          {`We help Davis cooks crowdfund food events so everyone can enjoy delicious homemade meals.`}
+          {`A collective of Home Restaurants serving the community delicious homemade meals. Come grab a plate!`}
         </div>
         <div style={{ float: "right" }}>
           <Button
