@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import BannerVideo from '../../images/other/website-header.mp4';
-import BannerVideoStill from '../../images/other/banner-video-still.png';
 import FallbackImage from '../../images/other/fallback.png';
 import Button from '@material-ui/core/Button';
 import './VideoBanner.css';
@@ -28,8 +27,8 @@ const HeroText = styled.h2`
   max-width: 950px;
   margin: 0.5em;
 
-  @media (max-width: 430px), (max-height: 430px) {
-    font-size: 1.25em;
+  @media (max-width: 500px), (max-height: 500px) {
+    font-size: 1.75em;
   }
 `;
 
@@ -51,7 +50,7 @@ const ButtonText = styled.span`
   color: white;
   font-size: 2em;
 
-  @media (max-width: 430px), (max-height: 430px) {
+  @media (max-width: 500px), (max-height: 500px) {
     font-size: 1em;
   }
 `;
@@ -80,15 +79,15 @@ export default () => (
         <div>
           {`A collective of Home Restaurants serving the community delicious homemade meals. Come grab a plate!`}
         </div>
-        <div style={{ float: "right" }}>
+        <div style={{ float: 'right' }}>
           <Button
-            style={{ margin: "0.5rem" }}
+            style={{ margin: '0.5rem' }}
             variant="outlined"
             size="large"
             component={Link}
             to="/404">
             <ButtonText>Read our story</ButtonText>
-            <FaChevronCircleRight color={"white"} style={{ margin: ".5rem" }} />
+            <FaChevronCircleRight color={'white'} style={{ margin: '.5rem' }} />
           </Button>
         </div>
       </HeroText>
