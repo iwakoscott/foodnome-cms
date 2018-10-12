@@ -1,14 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import BannerVideo from "../../images/other/website-header.mp4";
-import BannerVideoStill from "../../images/other/banner-video-still.png";
-import FallbackImage from "../../images/other/fallback.png";
-import Button from "@material-ui/core/Button";
-import "./VideoBanner.css";
-import { FaChevronCircleRight } from "react-icons/fa";
-import { Link } from "gatsby";
-import Image from "react-shimmer";
-import FoodnomeCarrot from "../../images/logos/FoodnomeCarrot_IconOnly_White_TransparentBG_small.png";
+import React from 'react';
+import styled from 'styled-components';
+import BannerVideo from '../../images/other/website-header.mp4';
+import BannerVideoStill from '../../images/other/banner-video-still.png';
+import FallbackImage from '../../images/other/fallback.png';
+import Button from '@material-ui/core/Button';
+import './VideoBanner.css';
+import { FaChevronCircleRight } from 'react-icons/fa';
+import { Link } from 'gatsby';
+import FoodnomeCarrot from '../../images/logos/FoodnomeCarrot_IconOnly_White_TransparentBG_small.png';
 
 const VideoContainer = styled.div`
   position: relative;
@@ -72,7 +71,7 @@ export default () => (
     </Video>
     <HeroTextContainer>
       <HeroText>
-        <Image
+        <img
           width={100}
           height={100}
           src={FoodnomeCarrot}

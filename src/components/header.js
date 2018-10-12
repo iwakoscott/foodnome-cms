@@ -135,7 +135,7 @@ class Header extends React.Component {
             </Button>
             <div className={classes.mainLogo}>
               <Link to="/">
-                <Image
+                <img
                   style={{ padding: 0, margin: 0 }}
                   src={FoodnomeLogo}
                   width={125}
