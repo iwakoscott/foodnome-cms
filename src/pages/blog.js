@@ -7,15 +7,6 @@ import { LinkButton } from '../components/Buttons';
 import styled from 'styled-components';
 
 const CardTitle = styled.h2`
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
   font-size: 2em;
   @media (max-width: 400px), (max-height: 400px) {
     font-size: 1.5em;
@@ -23,15 +14,6 @@ const CardTitle = styled.h2`
 `;
 
 const Date = styled.h3`
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
   font-size: 1.5em;
   @media (max-width: 400px), (max-height: 400px) {
     font-size: 1.25em;

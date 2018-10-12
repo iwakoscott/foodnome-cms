@@ -9,20 +9,3 @@ body {
   height: 100%;
   width: 100%;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-}

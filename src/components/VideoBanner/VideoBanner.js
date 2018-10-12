@@ -26,15 +26,6 @@ const HeroText = styled.h2`
   font-size: 3em;
   max-width: 950px;
   margin: 0.5em;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
 
   @media (max-width: 500px), (max-height: 500px) {
     font-size: 1.75em;
