@@ -7,6 +7,8 @@ import './VideoBanner.css';
 import { FaChevronCircleRight } from 'react-icons/fa';
 import { Link } from 'gatsby';
 import FoodnomeCarrot from '../../images/logos/FoodnomeCarrot_IconOnly_White_TransparentBG_small.png';
+import { HeroTextContainer } from '../Containers';
+import { HeroText } from '../Text';
 
 const VideoContainer = styled.div`
   position: relative;
@@ -19,29 +21,6 @@ const Video = styled.video`
   object-fit: cover;
   height: 100vh;
   width: 100%;
-`;
-
-const HeroText = styled.h2`
-  color: white;
-  font-size: 3em;
-  max-width: 950px;
-  margin: 0.5em;
-
-  @media (max-width: 500px), (max-height: 500px) {
-    font-size: 1.75em;
-  }
-`;
-
-const HeroTextContainer = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 `;
 
 const ButtonText = styled.span`
