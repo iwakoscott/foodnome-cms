@@ -102,7 +102,7 @@ export default props => (
         justifyContent: 'center',
         flexDirection: 'column'
       }}>
-      <h1 style={{ alignSelf: 'center' }}>Meet the team!</h1>
+      <h1 style={{ alignSelf: 'center', margin: '1em 0' }}>Meet the team!</h1>
       <StaticQuery
         query={graphql`
           query themeColorQuery {
