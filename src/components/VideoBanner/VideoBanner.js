@@ -86,7 +86,7 @@ export default () => (
             size="large"
             component={Link}
             to="/404">
-            <ButtonText>Read our story</ButtonText>
+            <ButtonText>our story</ButtonText>
             <FaChevronCircleRight color={'white'} style={{ margin: '.5rem' }} />
           </Button>
         </div>

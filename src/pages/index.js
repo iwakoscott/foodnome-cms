@@ -48,10 +48,9 @@ const Deck = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 1rem;
   color: #2f3640;
-  text-decoration: underline;
   @media (max-width: 400px), (max-height: 400px) {
     font-size: 1.5em;
   }
