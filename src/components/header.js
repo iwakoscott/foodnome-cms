@@ -13,6 +13,7 @@ const AppBarInterior = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 `;
 
 const CloseButtonContainer = styled.div`
@@ -117,7 +118,7 @@ class Header extends React.Component {
     const atHome = location.pathname === '/';
 
     return (
-      <header>
+      <div>
         <AppBar
           style={{
             background: atHome
@@ -129,8 +130,10 @@ class Header extends React.Component {
             boxShadow: transparent ? 'none' : 'auto'
           }}>
           <AppBarInterior>
-            <Button onClick={this.handleToggle}>
-              <FaBars style={{ margin: '.25rem' }} color="white" size={20} />
+            <Button
+              onClick={this.handleToggle}
+              style={{ width: 'min-content' }}>
+              <FaBars color="white" size={20} />
             </Button>
             <LogoContainer>
               <Link to="/">
@@ -206,7 +209,7 @@ class Header extends React.Component {
             </div>
           </DrawerInterior>
         </Drawer>
-      </header>
+      </div>
     );
   }
 }
