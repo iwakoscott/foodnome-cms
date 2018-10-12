@@ -69,7 +69,7 @@ export default () => (
       <img src={FallbackImage} />
     </Video>
     <HeroTextContainer>
-      <HeroText>
+      <HeroText className="video-banner-text">
         <img
           width={100}
           height={100}

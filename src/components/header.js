@@ -59,10 +59,6 @@ const getRoutes = () => [
     name: 'Blog'
   },
   {
-    to: '/apply',
-    name: 'Apply to be a Cook!'
-  },
-  {
     to: '/team',
     name: 'Meet the Team!'
   }
