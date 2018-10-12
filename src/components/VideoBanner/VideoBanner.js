@@ -64,7 +64,7 @@ export default () => (
             variant="outlined"
             size="large"
             component={Link}
-            to="/404">
+            to="/story">
             <ButtonText>our story</ButtonText>
             <FaChevronCircleRight color={'white'} style={{ margin: '.5rem' }} />
           </Button>

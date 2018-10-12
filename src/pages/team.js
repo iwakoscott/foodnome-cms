@@ -100,7 +100,8 @@ export default props => (
         display: 'flex',
         alignContent: 'center',
         justifyContent: 'center',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        minHeight: '100vh'
       }}>
       <h1 style={{ alignSelf: 'center', margin: '1em 0' }}>Meet the team!</h1>
       <StaticQuery
