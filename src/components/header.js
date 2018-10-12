@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import FoodnomeLogo from '../images/logos/FoodnomeCarrot_WordOnly_White_TransparentBG_small.png';
 import { FaBars, FaInstagram, FaPinterest, FaFacebook } from 'react-icons/fa';
@@ -8,51 +7,49 @@ import Button from '@material-ui/core/Button';
 import { StaticQuery, graphql } from 'gatsby';
 import { CloseButton, TextButton } from './Buttons';
 import Drawer from '@material-ui/core/Drawer';
+import styled from 'styled-components';
 
-const styles = () => ({
-  appBarInterior: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-  closeButtonWrapper: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    width: '100%'
-  },
-  iconWrapper: {
-    width: '100%',
-    maxWidth: '300px',
-    display: 'flex',
-    justifyContent: 'space-evenly',
-    margin: '1em 0'
-  },
-  drawer: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    flex: 1,
-    width: '300px'
-  },
-  link: {
-    color: 'black',
-    textDecoration: 'none',
-    fontSize: '1.25em',
-    margin: '.5em 0'
-  },
-  links: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  mainLogo: {
-    display: 'flex',
-    width: '100%',
-    justifyContent: 'center'
-  }
-});
+const AppBarInterior = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const CloseButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+`;
+
+const IconContainer = styled.div`
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em 0;
+`;
+
+const DrawerInterior = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  width: 300px;
+`;
+
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const LogoContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+`;
 
 const getRoutes = () => [
   { to: '/', name: 'Home' },
@@ -81,7 +78,7 @@ class Header extends React.Component {
 
   handleScroll = () => {
     const scrollPos = window.pageYOffset;
-    if (scrollPos <= 56) {
+    if (scrollPos <= 90) {
       this.setState({
         transparent: true
       });
@@ -94,7 +91,7 @@ class Header extends React.Component {
 
   componentDidMount() {
     if (this.props.location.pathname === '/') {
-      if (window.pageYOffset <= 56) {
+      if (window.pageYOffset <= 90) {
         this.setState({
           transparent: true
         });
@@ -115,7 +112,7 @@ class Header extends React.Component {
   };
 
   render() {
-    const { themeColor, classes, siteTitle, location } = this.props;
+    const { themeColor, siteTitle, location } = this.props;
     const { transparent } = this.state;
     const atHome = location.pathname === '/';
 
@@ -128,15 +125,14 @@ class Header extends React.Component {
                 ? 'transparent'
                 : themeColor
               : themeColor,
-            width: '100%',
             transition: 'all 300ms ease-out',
             boxShadow: transparent ? 'none' : 'auto'
           }}>
-          <div className={classes.appBarInterior}>
+          <AppBarInterior>
             <Button onClick={this.handleToggle}>
               <FaBars style={{ margin: '.25rem' }} color="white" size={20} />
             </Button>
-            <div className={classes.mainLogo}>
+            <LogoContainer>
               <Link to="/">
                 <img
                   style={{ padding: 0, margin: 0 }}
@@ -146,18 +142,18 @@ class Header extends React.Component {
                   alt={`${siteTitle} Logo`}
                 />
               </Link>
-            </div>
-          </div>
+            </LogoContainer>
+          </AppBarInterior>
         </AppBar>
         <Drawer open={this.state.open} onClose={this.handleToggle}>
-          <div className={classes.drawer}>
-            <div className={classes.closeButtonWrapper}>
+          <DrawerInterior>
+            <CloseButtonContainer>
               <CloseButton
                 onClick={this.handleToggle}
                 iconProps={{ size: 20 }}
               />
-            </div>
-            <div className={classes.links}>
+            </CloseButtonContainer>
+            <LinksContainer>
               {getRoutes().map((route, index) => (
                 <TextButton
                   style={{ margin: '1em 0' }}
@@ -166,7 +162,7 @@ class Header extends React.Component {
                   {route.name}
                 </TextButton>
               ))}
-            </div>
+            </LinksContainer>
             <div>
               {/* Social Media Links here */}
               <StaticQuery
@@ -182,7 +178,7 @@ class Header extends React.Component {
                   }
                 `}
                 render={data => (
-                  <div className={classes.iconWrapper}>
+                  <IconContainer>
                     <Button
                       component={'a'}
                       rel="noopener noreferrer"
@@ -204,15 +200,15 @@ class Header extends React.Component {
                       href={data.site.siteMetadata.pinterestURL}>
                       <FaPinterest size={30} color={themeColor} />
                     </Button>
-                  </div>
+                  </IconContainer>
                 )}
               />
             </div>
-          </div>
+          </DrawerInterior>
         </Drawer>
       </header>
     );
   }
 }
 
-export default withStyles(styles)(Header);
+export default Header;

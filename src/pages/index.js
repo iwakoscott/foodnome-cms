@@ -1,14 +1,13 @@
-import React from "react";
-import { Link } from "gatsby";
-import Card from "@material-ui/core/Card";
-import Layout from "../components/layout";
-import VideoBanner from "../components/VideoBanner";
-import styled, { css } from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react';
+import Card from '@material-ui/core/Card';
+import Layout from '../components/layout';
+import VideoBanner from '../components/VideoBanner';
+import styled, { css } from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
 
-import BlinkingApple from "../images/gifs/blinkeye.bc19101e.gif";
-import AppleEating from "../images/gifs/apple-eating.1730e376.gif";
-import GrapeParty from "../images/gifs/grape-party.87955635.gif";
+import BlinkingApple from '../images/gifs/blinkeye.bc19101e.gif';
+import AppleEating from '../images/gifs/apple-eating.1730e376.gif';
+import GrapeParty from '../images/gifs/grape-party.87955635.gif';
 
 const Container = styled.div`
   display: flex;
@@ -20,8 +19,8 @@ const Container = styled.div`
     css`
       background-color: #ffffff;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23${props.backgroundColor.replace(
-        "#",
-        ""
+        '#',
+        ''
       )}' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     `};
 `;
