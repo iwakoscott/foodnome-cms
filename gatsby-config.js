@@ -12,7 +12,7 @@ module.exports = {
         width: 256,
         height: 32.1,
         imageURL:
-          'https://firebasestorage.googleapis.com/v0/b/foodnome.appspot.com/o/assets%2Fpress%2Flatimes.png?alt=media&token=7965d9d9-a2a4-45e7-80bb-6e63cb6c6c65',
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Flatimes.png?alt=media&token=338a7cc5-9d69-4ebd-8719-699360dc7f4a',
         alt: 'LA Times Logo',
         linkURL:
           'http://www.latimes.com/politics/essential/la-pol-ca-essential-politics-may-2018-selling-home-cooked-food-will-no-longer-1537315214-htmlstory.html'
@@ -21,7 +21,7 @@ module.exports = {
         width: 256,
         height: 34.2,
         imageURL:
-          'https://firebasestorage.googleapis.com/v0/b/foodnome.appspot.com/o/assets%2Fpress%2Fmunchies.png?alt=media&token=ea283620-4e00-44bd-8bf7-cc0e773cde9c',
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Fmunchies.png?alt=media&token=bc7c32f8-4a47-48ac-9d0c-c51971ef4754',
         alt: 'Vice Munchies Logo',
         linkURL:
           'https://munchies.vice.com/en_us/article/kzyjzv/inside-the-fight-to-sell-home-cooked-food-in-california?utm_campaign=sharebutton'
@@ -30,7 +30,7 @@ module.exports = {
         width: 256,
         height: 59,
         imageURL:
-          'https://firebasestorage.googleapis.com/v0/b/foodnome.appspot.com/o/assets%2Fpress%2Fsandiegouniontribune.png?alt=media&token=3847f69b-21a7-4871-a09d-29bc41d8ff12',
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Fsandiegouniontribune.png?alt=media&token=2b89bb99-9795-4df5-a84c-d6d16c8e64f0',
         alt: 'San Diego Union Tribune Logo',
         linkURL:
           'http://www.sandiegouniontribune.com/la-pol-ca-essential-politics-may-2018-selling-home-cooked-food-will-no-longer-1537315214-htmlstory.html'
@@ -39,7 +39,7 @@ module.exports = {
         width: 256,
         height: 78.1,
         imageURL:
-          'https://firebasestorage.googleapis.com/v0/b/foodnome.appspot.com/o/assets%2Fpress%2FCBS.png?alt=media&token=503002e0-1ce5-4bbd-8379-8784c4bd5e1e',
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2FCBS.png?alt=media&token=d42c3b9a-2c21-483d-aaad-8ae5b70159c3',
         alt: 'CBS Logo',
         linkURL:
           'https://sacramento.cbslocal.com/2018/08/22/home-cooks-selling-food-online/'
@@ -48,7 +48,7 @@ module.exports = {
         width: 256,
         height: 95.7,
         imageURL:
-          'https://firebasestorage.googleapis.com/v0/b/foodnome.appspot.com/o/assets%2Fpress%2Fabc10.png?alt=media&token=a1c665d6-f46b-4523-9565-0c3add464974',
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Fabc10.png?alt=media&token=44be7f03-03e1-4cd4-b3ba-5e29221d1c7e',
         alt: 'ABC 10 Logo',
         linkURL:
           'https://www.abc10.com/article/news/local/proposed-california-law-would-let-people-sell-food-cooked-in-home-kitchens/103-586717946'
@@ -57,7 +57,7 @@ module.exports = {
         width: 256,
         height: 33.9,
         imageURL:
-          'https://firebasestorage.googleapis.com/v0/b/foodnome.appspot.com/o/assets%2Fpress%2Fdailydemocrat.png?alt=media&token=63b332f0-2f97-49da-ac7e-c495f53d46df',
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Fdailydemocrat.png?alt=media&token=95c7890d-1ab7-44ca-895c-cb3ebb40a22c',
         alt: 'Daily Democrat Logo',
         linkURL:
           'https://www.dailydemocrat.com/2018/03/08/yolo-county-shuts-down-crowdfunded-dinners-in-davis/'
@@ -66,7 +66,7 @@ module.exports = {
         width: 256,
         height: 128.6,
         imageURL:
-          'https://firebasestorage.googleapis.com/v0/b/foodnome.appspot.com/o/assets%2Fpress%2Fthenewfoodeconomy.png?alt=media&token=42e8e6eb-3e20-4cc8-ab43-fb23ab1fa967',
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Fthenewfoodeconomy.png?alt=media&token=0c3ca1fa-eca7-47c8-8b6d-45b95d393e26',
         alt: 'The New Food Economy Logo',
         linkURL:
           'https://newfoodeconomy.org/california-homemade-food-operations-act-2018/'
