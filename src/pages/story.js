@@ -65,9 +65,7 @@ export default props => (
       <HeroContainer>
         <PhotoBanner src={RadishBanner} alt="foodnome painting" />
         <Overlay />
-        <AnimatedHeroText
-          className=""
-          style={{ position: 'absolute', bottom: 0 }}>
+        <AnimatedHeroText style={{ position: 'absolute', bottom: 0 }}>
           Our Story <br />
           <br />
           We found our roots in the rich culture of small-town Davis, CA.
@@ -106,7 +104,7 @@ export default props => (
         </section>
         <section>
           <h3>
-            The Community Came Together to Legalize the Sale of Homemade Food
+            The community came together to legalize the sale of homemade food
           </h3>
           <p>
             After launching in November 2017, we hosted 45 events with 13
