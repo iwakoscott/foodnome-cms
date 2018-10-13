@@ -40,7 +40,13 @@ const Overlay = styled.div`
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 `;
 
 const Article = styled.article`
@@ -50,7 +56,7 @@ const Article = styled.article`
 `;
 
 const AnimatedHeroText = styled(HeroText)`
-  animation: ${SlideUp} 300ms ease-out;
+  animation: ${SlideUp} 500ms ease-out;
 `;
 
 export default props => (
