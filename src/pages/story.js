@@ -3,7 +3,6 @@ import Layout from '../components/layout';
 import RadishBanner from '../images/other/radish-banner.jpg';
 import styled, { keyframes } from 'styled-components';
 import { HeroText } from '../components/Text';
-import { Slide } from '@material-ui/core';
 
 const SlideUp = keyframes`
     from {
