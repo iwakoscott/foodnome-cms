@@ -10,7 +10,7 @@ const getTeamMembers = () => [
     name: 'Akshay Prabhu',
     title: 'Founder',
     description:
-      'Advocate for food justice & homegrown dining with a love for Cooking and the food underground',
+      'Advocate for food justice & homegrown dining with a love for cooking and the food underground',
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fakshay_prabhu.jpeg?alt=media&token=3bc3b375-4454-40e2-8f15-cbd90b4923ef',
     linkedinURL: 'https://www.linkedin.com/in/akshay-prabhu-9b1549bb/'
@@ -29,10 +29,17 @@ const getTeamMembers = () => [
     name: 'Hank Teicheira',
     title: 'Fullstack Developer',
     description:
-      'Farmer and Winemaker converted his passion to tech to change the food system in a larger way',
+      'Farmer and winemaker converted his passion to tech to change the food system in a larger way',
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fhank_teicheira.jpeg?alt=media&token=a676a3cd-040b-48a7-b0d7-cdca5f9a714f',
     linkedinURL: 'https://www.linkedin.com/in/hteicheira/'
+  },
+  {
+    name: 'Li Schmidt',
+    title: 'Supply Chain Manager',
+    description: 'Helping home cooks connect with cocal farmers + producers',
+    photoURL:
+      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fli_schmidt.jpg?alt=media&token=a026cc5e-f884-4e6f-8db0-4e958e14f99a'
   }
 ];
 

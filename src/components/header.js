@@ -59,6 +59,10 @@ const getRoutes = () => [
     name: 'Blog'
   },
   {
+    to: '/story',
+    name: 'Story'
+  },
+  {
     to: '/team',
     name: 'Meet the Team!'
   }
