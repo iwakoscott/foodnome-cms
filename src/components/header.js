@@ -73,6 +73,8 @@ class Header extends React.Component {
     };
   }
 
+  isTransparent = path => ['/', '/story'].includes(path);
+
   handleScroll = () => {
     const scrollPos = window.pageYOffset;
     if (scrollPos <= 90) {
@@ -87,7 +89,7 @@ class Header extends React.Component {
   };
 
   componentDidMount() {
-    if (this.props.location.pathname === '/') {
+    if (this.isTransparent(this.props.location.pathname)) {
       if (window.pageYOffset <= 90) {
         this.setState({
           transparent: true
@@ -111,13 +113,12 @@ class Header extends React.Component {
   render() {
     const { themeColor, siteTitle, location } = this.props;
     const { transparent } = this.state;
-    const atHome = location.pathname === '/';
 
     return (
       <div>
         <AppBar
           style={{
-            background: atHome
+            background: this.isTransparent(this.props.location.pathname)
               ? transparent
                 ? 'transparent'
                 : themeColor
