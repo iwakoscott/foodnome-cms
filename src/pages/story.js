@@ -68,6 +68,19 @@ const SubTitle = styled.h3`
   }
 `;
 
+const StyledImage = styled.img`
+  max-width: 700px;
+  width: 100%;
+`;
+
+function Image(props) {
+  return (
+    <div style={{ textAlign: 'center', width: '100%' }}>
+      <StyledImage {...props} />
+    </div>
+  );
+}
+
 export default props => (
   <StaticQuery
     query={graphql`
@@ -103,6 +116,10 @@ export default props => (
                 adventure, or just traveling across the street, Foodnome is here
                 to bring us together over a dining table.
               </p>
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/approved%2Fimage7.png?alt=media&token=d0715081-0f79-481b-ac37-93a7f1086da7"
+                alt="Foodnome Dinner Photo"
+              />
               <p>
                 Foodnome is about creating community, meeting new people, and
                 rethinking food systems to make homemade meals affordable. We’re
@@ -115,6 +132,10 @@ export default props => (
               <SubTitle color={data.site.siteMetadata.themeColor}>
                 Why we care
               </SubTitle>
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/approved%2Fimage4.jpg?alt=media&token=057dfb77-5dc8-44dd-a2d8-94f8c5c773ca"
+                alt="Serving Food"
+              />
               <p>
                 Memories are created over the warmth and aroma of a homemade
                 meal. What if we could all grab a plate, sit down together and
@@ -125,6 +146,11 @@ export default props => (
                 the dated food industry by creating their own home restaurants
                 and growing healthy communities.
               </p>
+
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/approved%2Fimage1.png?alt=media&token=06efa4ee-cb7c-4207-8e8d-d307d3246169"
+                alt="Gathering around the Dinner table"
+              />
             </section>
             <section>
               <SubTitle color={data.site.siteMetadata.themeColor}>
@@ -148,7 +174,14 @@ export default props => (
                   COOK Alliance
                 </a>{' '}
                 to pass Assembly Bill 626 and legalize the sale of homemade
-                food. The food revolution will be led by those who are least
+                food.
+              </p>
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/approved%2Fimage3.png?alt=media&token=5f5f5876-755e-4f98-a926-315b5143c49b"
+                alt="Table set for dinner"
+              />
+              <p>
+                The food revolution will be led by those who are least
                 represented in food business ownership today: people of color,
                 women, disabled people, and immigrants. We believe that
                 disproportionately low food business ownership among these
@@ -163,6 +196,11 @@ export default props => (
               <SubTitle color={data.site.siteMetadata.themeColor}>
                 We are in the middle of a food revolution!
               </SubTitle>
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/approved%2Fimage5.jpg?alt=media&token=a59a285f-9e8e-4b34-bb8a-d53c67731560"
+                alt="Group Petitioning"
+                maxWidth={700}
+              />
               <p>
                 On September 18th, Jerry Brown signed{' '}
                 <a
@@ -181,6 +219,10 @@ export default props => (
                 to start popping off county by county, so contact your county
                 health official to tell them to approve this bill ASAP!
               </p>
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/approved%2Fimage6.jpg?alt=media&token=b4279157-4e5c-4b99-bb46-92ef93cb59e5"
+                alt="AB-626 Bill Press"
+              />
               <p>
                 As the law catches up with popular demand, Foodnome will be your
                 first stop to find decadent local home cooked experiences. Check
