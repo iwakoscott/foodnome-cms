@@ -100,7 +100,7 @@ export default props => (
             <PhotoBanner src={RadishBanner} alt="foodnome painting" />
             <Overlay />
             <AnimatedHeroText style={{ position: 'absolute', bottom: 0 }}>
-              Our Story: <br />
+              Origins <br />
               <br />
               We found our roots in the rich culture of small-town Davis, CA.
             </AnimatedHeroText>

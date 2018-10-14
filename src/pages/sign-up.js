@@ -72,6 +72,7 @@ class SignUp extends React.Component {
                       margin: '1em .5em',
                       display: 'flex',
                       justifyContent: 'space-between',
+                      alignItems: 'center',
                       flexDirection: 'column',
                       outline: 'none',
                       height: 'min-content'
@@ -86,7 +87,8 @@ class SignUp extends React.Component {
                       style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        justifyContent: 'space-between'
+                        justifyContent: 'space-between',
+                        maxWidth: '20rem'
                       }}
                       action="https://foodnome.us17.list-manage.com/subscribe/post?u=eb55602632b381ff0f3bdd8aa&amp;id=6da5658005"
                       method="post"

@@ -15,6 +15,9 @@ const Container = styled.div`
 
 const BannerText = styled.h2`
   font-size: 2.5em;
+  @media (max-width: 500px) {
+    font-size: 2em;
+  }
 `;
 
 const StyledCard = styled(Card)`
@@ -24,6 +27,7 @@ const StyledCard = styled(Card)`
   align-items: center;
   flex-direction: column;
   margin-bottom: 3em;
+  max-width: 900px;
 `;
 
 export default function SignUpBanner(props) {
