@@ -77,7 +77,7 @@ class Header extends React.Component {
     };
   }
 
-  isTransparent = path => ['/', '/story'].includes(path);
+  isTransparent = path => ['/', '/story/', '/story'].includes(path);
 
   handleScroll = () => {
     const scrollPos = window.pageYOffset;
