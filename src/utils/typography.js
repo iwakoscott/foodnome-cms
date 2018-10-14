@@ -77,6 +77,10 @@ const typography = new Typography({
       fontVariant: 'normal',
       textTransform: 'none',
       lineHeight: 1
+    },
+    a: {
+      textDecoration: 'none',
+      color: '#ec008c'
     }
   })
 });
