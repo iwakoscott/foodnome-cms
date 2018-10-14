@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
-import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { graphql, StaticQuery } from 'gatsby';
 
 const getTeamMembers = () => [
@@ -37,9 +37,25 @@ const getTeamMembers = () => [
   {
     name: 'Li Schmidt',
     title: 'Supply Chain Manager',
-    description: 'Helping home cooks connect with cocal farmers + producers',
+    description: 'Helping home cooks connect with local farmers + producers',
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fli_schmidt.jpg?alt=media&token=a026cc5e-f884-4e6f-8db0-4e958e14f99a'
+  },
+  {
+    name: 'Shari Brown',
+    title: 'Marketing & Social Media',
+    description: 'A Dietitian in training with a love of sharing food.',
+    instagramURL: 'https://www.instagram.com/naturallyfueled/?hl=en',
+    photoURL:
+      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fshari_brown.jpg?alt=media&token=aeec5395-0e89-41d7-be8f-668212d0d06d'
+  },
+  {
+    name: 'Geoffrey Mangalam',
+    title: 'Cook Relations & Safety',
+    description:
+      'Has a love for decentralization, empowerment, and keeping people safe.',
+    photoURL:
+      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fgeoffrey_mangalam.jpg?alt=media&token=e399ef13-bbbb-42a1-84ea-91e40b52184c'
   }
 ];
 
@@ -145,6 +161,15 @@ export default props => (
                       target="_BLANK"
                       href={profile.twitterURL}>
                       <FaTwitter size={20} />
+                    </SocialMediaLink>
+                  )}
+                  {profile.instagramURL && (
+                    <SocialMediaLink
+                      color={data.site.siteMetadata.themeColor}
+                      rel="noopener noreferrer"
+                      target="_BLANK"
+                      href={profile.instagramURL}>
+                      <FaInstagram size={20} />
                     </SocialMediaLink>
                   )}
                 </SocialMediaContainer>
