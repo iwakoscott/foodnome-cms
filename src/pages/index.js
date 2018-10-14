@@ -79,8 +79,8 @@ const IndexPage = props => (
               <section>
                 <h3>Step 1. Browse</h3>
                 <p>
-                  Search for food events near you. We are currently focused on
-                  Davis, CA but will be expanding to your neighborhood soon.
+                  Search for home restaurants near you. We are currently focused
+                  on Davis, CA but will be expanding to your neighborhood soon.
                 </p>
               </section>
             </CardContainer>
