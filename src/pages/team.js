@@ -71,7 +71,7 @@ const Deck = styled.div`
 
 const StyledCard = styled(Card)`
   width: 20rem;
-  padding: 1em;
+  padding: 1em 1.5em;
   margin: 1em 0;
   display: flex;
   flex-direction: column;
