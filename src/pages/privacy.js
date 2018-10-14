@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import { Dialog } from "@material-ui/core";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import DialogContentText from "@material-ui/core/DialogContentText";
-import DialogContent from "@material-ui/core/DialogContent";
-import Layout from "../components/layout";
-import { CloseButton } from "../components/Buttons";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import { Dialog } from '@material-ui/core';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogContent from '@material-ui/core/DialogContent';
+import Layout from '../components/layout';
+import { CloseButton } from '../components/Buttons';
 
 const styles = () => ({
   list: {
-    padding: "1em"
+    padding: '1em'
   }
 });
 
@@ -18,12 +18,14 @@ function Privacy({ classes, ...rest }) {
   return (
     <Layout {...rest}>
       <Dialog aria-labelledby="privacy-policy-modal" fullScreen open={true}>
-        <div style={{ width: "100%" }}>
-          <CloseButton
-            style={{ width: "min-content", float: "right" }}
-            iconProps={{ size: 20 }}
-            onClick={() => rest.navigate(rest.location.state.from)}
-          />
+        <div style={{ width: '100%' }}>
+          {rest.location.state && rest.location.state.from !== null ? (
+            <CloseButton
+              style={{ width: 'min-content', float: 'right' }}
+              iconProps={{ size: 20 }}
+              onClick={() => rest.navigate(rest.location.state.from)}
+            />
+          ) : null}
         </div>
         <DialogTitle id="privacy-policy-modal">Privacy Policy</DialogTitle>
         <DialogContent>
@@ -84,8 +86,8 @@ function Privacy({ classes, ...rest }) {
                   information, it is not possible to guarantee it and therefore
                   if you supply such information you do so at your own risk. If
                   you find that the information we hold is incorrect or you wish
-                  to remove it, please contact us at{" "}
-                  <a href="mailto:info@foodnome.com" style={{ color: "black" }}>
+                  to remove it, please contact us at{' '}
+                  <a href="mailto:info@foodnome.com" style={{ color: 'black' }}>
                     info@foodnome.com
                   </a>
                   .

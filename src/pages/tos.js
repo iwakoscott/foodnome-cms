@@ -1,22 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Dialog } from "@material-ui/core";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import DialogContentText from "@material-ui/core/DialogContentText";
-import DialogContent from "@material-ui/core/DialogContent";
-import Layout from "../components/layout";
-import { CloseButton } from "../components/Buttons";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Dialog } from '@material-ui/core';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogContent from '@material-ui/core/DialogContent';
+import Layout from '../components/layout';
+import { CloseButton } from '../components/Buttons';
 
 function TermsOfService(props) {
   return (
     <Layout {...props}>
       <Dialog fullScreen aria-labelledby="terms-of-service-modal" open={true}>
-        <div style={{ width: "100%" }}>
-          <CloseButton
-            style={{ width: "min-content", float: "right" }}
-            iconProps={{ size: 20 }}
-            onClick={() => props.navigate(props.location.state.from)}
-          />
+        <div style={{ width: '100%' }}>
+          {props.location.state && props.location.state.from !== null ? (
+            <CloseButton
+              style={{ width: 'min-content', float: 'right' }}
+              iconProps={{ size: 20 }}
+              onClick={() => props.navigate(props.location.state.from)}
+            />
+          ) : null}
         </div>
         <DialogTitle id="terms-of-service-modal">Terms of Service</DialogTitle>
         <DialogContent>
@@ -395,8 +397,8 @@ function TermsOfService(props) {
 
           <DialogTitle>Questions and Suggestions</DialogTitle>
           <DialogContentText>
-            If you have questions or suggestions, please contact us at{" "}
-            <a href="mailto:info@foodnome.com" style={{ color: "black" }}>
+            If you have questions or suggestions, please contact us at{' '}
+            <a href="mailto:info@foodnome.com" style={{ color: 'black' }}>
               info@foodnome.com
             </a>
             .
@@ -417,8 +419,8 @@ function TermsOfService(props) {
           </DialogContentText>
           <DialogContentText>
             Once a reservation is made guests will have 3 days with which to
-            contact foodnome at{" "}
-            <a href="mailto:info@foodnome.com" style={{ color: "black" }}>
+            contact foodnome at{' '}
+            <a href="mailto:info@foodnome.com" style={{ color: 'black' }}>
               info@foodnome.com
             </a>
             . After 3 days have passed funds will be released to the event's
