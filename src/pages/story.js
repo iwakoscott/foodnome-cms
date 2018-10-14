@@ -61,10 +61,10 @@ const AnimatedHeroText = styled(HeroText)`
 `;
 
 const SubTitle = styled.h3`
-  font-size: 1.75em;
+  font-size: 2em;
   color: ${props => (props.color ? props.color : 'black')};
   @media (max-width: 500px) {
-    font-size: 1.25em;
+    font-size: 1.75em;
   }
 `;
 
