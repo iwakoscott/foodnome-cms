@@ -21,6 +21,26 @@ const Video = styled.video`
   object-fit: cover;
   height: 100vh;
   width: 100%;
+
+  &::-webkit-media-controls-overlay-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+
+  &:-webkit-media-controls-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+  }
 `;
 
 const ButtonText = styled.span`
