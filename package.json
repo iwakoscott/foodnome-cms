@@ -8,6 +8,7 @@
     "@wapps/gatsby-plugin-material-ui": "^1.0.7",
     "babel-plugin-styled-components": "^1.8.0",
     "gatsby": "^2.0.0",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-netlify-cms": "^3.0.3",
