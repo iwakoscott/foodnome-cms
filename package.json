@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Foodnome",
+  "description": "A collective of Home Restaurants serving the community delicious homemade meals.",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Satoshi Scott Iwako <iwakoscott@foodnome.com>",
   "dependencies": {
     "@material-ui/core": "^3.1.1",
     "@wapps/gatsby-plugin-material-ui": "^1.0.7",
