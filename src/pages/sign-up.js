@@ -50,7 +50,10 @@ class SignUp extends React.Component {
               }
             `}
             render={data => (
-              <div>
+              <div
+                style={{
+                  height: '100%'
+                }}>
                 <Modal
                   style={{
                     display: 'flex',
@@ -66,11 +69,12 @@ class SignUp extends React.Component {
                       backgroundColor: 'white',
                       width: '30rem',
                       padding: '1em',
-                      margin: '1rem',
+                      margin: '1em .5em',
                       display: 'flex',
                       justifyContent: 'space-between',
                       flexDirection: 'column',
-                      outline: 'none'
+                      outline: 'none',
+                      height: 'min-content'
                     }}>
                     <div>
                       <h1>
@@ -82,8 +86,7 @@ class SignUp extends React.Component {
                       style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        height: '100%'
+                        justifyContent: 'space-between'
                       }}
                       action="https://foodnome.us17.list-manage.com/subscribe/post?u=eb55602632b381ff0f3bdd8aa&amp;id=6da5658005"
                       method="post"
@@ -106,7 +109,7 @@ class SignUp extends React.Component {
                         </FormSection>
 
                         <FormSection>
-                          <label htmlFor="mce-FNAME">First Name</label>{' '}
+                          <label htmlFor="mce-FNAME">First</label>{' '}
                           <input
                             required
                             type="text"
@@ -119,7 +122,7 @@ class SignUp extends React.Component {
                         </FormSection>
 
                         <FormSection>
-                          <label htmlFor="mce-LNAME">Last Name</label>{' '}
+                          <label htmlFor="mce-LNAME">Last</label>{' '}
                           <input
                             required
                             type="text"
