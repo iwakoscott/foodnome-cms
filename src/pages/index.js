@@ -8,6 +8,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import BlinkingApple from '../images/gifs/blinkeye.bc19101e.gif';
 import AppleEating from '../images/gifs/apple-eating.1730e376.gif';
 import GrapeParty from '../images/gifs/grape-party.87955635.gif';
+import SignUpBanner from '../components/SignUpBanner';
 
 const Container = styled.div`
   display: flex;
@@ -102,6 +103,7 @@ const IndexPage = props => (
               </section>
             </CardContainer>
           </Deck>
+          <SignUpBanner location={props.location} />
         </Container>
       </Layout>
     )}

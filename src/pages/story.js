@@ -4,6 +4,7 @@ import RadishBanner from '../images/other/radish-banner.jpg';
 import styled, { keyframes } from 'styled-components';
 import { HeroText } from '../components/Text';
 import { StaticQuery, graphql } from 'gatsby';
+import SignUpBanner from '../components/SignUpBanner';
 
 const SlideUp = keyframes`
     from {
@@ -237,6 +238,7 @@ export default props => (
               <p>Happy local munching!</p>
             </section>
           </Article>
+          <SignUpBanner location={props.location} />
         </div>
       </Layout>
     )}
