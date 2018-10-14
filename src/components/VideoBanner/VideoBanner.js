@@ -45,7 +45,7 @@ export default () => (
       // preload={"true"}
     >
       <source src={BannerVideo} type="video/mp4" />
-      <img src={FallbackImage} />
+      <img src={FallbackImage} alt="Foodnome Dinner Event" />
     </Video>
     <HeroTextContainer>
       <HeroText className="video-banner-text">

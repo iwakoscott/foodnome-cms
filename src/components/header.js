@@ -115,7 +115,7 @@ class Header extends React.Component {
   };
 
   render() {
-    const { themeColor, siteTitle, location } = this.props;
+    const { themeColor, siteTitle } = this.props;
     const { transparent } = this.state;
 
     return (
