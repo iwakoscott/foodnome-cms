@@ -5,7 +5,7 @@ title: 'Chef Spotlight: Ru Zhang'
 ---
 Foodnome helps ambitious chefs get their start, because high starting costs make it functionally impossible to break into the food industry.
 
-“If I had my way, I could eat a different cuisine every night,” says Foodnome chef Ru Zhang. Zhang grew up helping her parents in their Chinese restaurant after school, and was chastised for wanting to go out to eat when there was plenty of food at home. As an adult, Zhang wants to bring more variety into the Davis culinary scene through fresh ingredients and interesting spices.
+“If I had my way, I could eat a different cuisine every night,” says Foodnome Chef Ru Zhang. Zhang grew up helping her parents in their Chinese restaurant after school, and was chastised for wanting to go out to eat when there was plenty of food at home. As an adult, Zhang wants to bring more variety into the Davis culinary scene through fresh ingredients and interesting spices.
 
 “The more spice the better,” laughed Zhang, “I love Korean spices, Thai curry, jerk chicken seasoning, mixed with cinnamon and Mediterranean spice.”
 
