@@ -31,4 +31,4 @@ Foodnome provides an accessible platform for chefs to set up their own kitchens 
 
 “I understand the need for regulation, but I really appreciate what Akshay is trying to do,” Zhang said, referring to Foodnome founder Akshay Prabhu. “From my perspective, as someone trying to do this for my career, it’s a great way to get started and build from there.”
 
-For now, Ru Zhang is starting her own catering business for private dinner parties, small weddings, and events. You can find out more at chefrucatering.com, and contact Zhang at chefucatering@gmail.com.
+For now, Ru Zhang is starting her own catering business for private dinner parties, small weddings, and events. You can find out more at chefrucatering.com, and contact Zhang at <a href="mailto:chefucatering@gmail.com">chefucatering@gmail.com</a>.
