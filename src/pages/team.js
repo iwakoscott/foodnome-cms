@@ -1,9 +1,21 @@
 import React from 'react';
 import Layout from '../components/layout';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Card from '@material-ui/core/Card';
 import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { graphql, StaticQuery } from 'gatsby';
+
+const SlideUp = keyframes`
+  from {
+    opacity: 0.1;
+    transform: translateY(75%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+`;
 
 const getTeamMembers = () => [
   {
@@ -67,6 +79,7 @@ const Deck = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  animation: ${SlideUp} 700ms cubic-bezier(0.73, -0.94, 0.47, 1.21);
 `;
 
 const StyledCard = styled(Card)`
