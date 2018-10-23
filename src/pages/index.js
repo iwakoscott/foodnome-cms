@@ -9,6 +9,7 @@ import BlinkingApple from '../images/gifs/blinkeye.bc19101e.gif';
 import AppleEating from '../images/gifs/apple-eating.1730e376.gif';
 import GrapeParty from '../images/gifs/grape-party.87955635.gif';
 import SignUpBanner from '../components/SignUpBanner';
+import withRoot from "../withRoot";
 
 const Container = styled.div`
   display: flex;
@@ -110,4 +111,4 @@ const IndexPage = props => (
   />
 );
 
-export default IndexPage;
+export default withRoot(IndexPage);
