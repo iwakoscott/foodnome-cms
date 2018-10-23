@@ -7,7 +7,7 @@ For as long as there have been humans, we have been gathering around the hearth.
 
 <figure>
 <img style="float: left; margin: 0 1em 0 0; max-width: 400px; width: 100%;" src="/assets/food-for-thought-img.jpeg" alt="A little boy and girl sharing an apple"/>
-<figcaption style="font-size: .75em; float: left; width: 100%; max-width: 350px; margin: 1em; font-style: italic;">
+<figcaption style="font-size: .75em; float: left; width: 100%; max-width: 350px; margin: 1em; padding: 1em; font-style: italic;">
 First published 1916 issue of National Geographic with a caption referring to Adam, Eve, and the apple. But more germane is how the image evokes childhood pleasure and the development of relationships through food
 A. W. Cutler, National Geographic Creative
 </figcaption>
