@@ -5,7 +5,13 @@ title: Food for Thought
 ---
 For as long as there have been humans, we have been gathering around the hearth. But food is more than survival, with it we make friends, court lovers, and count our blessings. Memories are created over the warmth and aroma of a homemade meal.
 
-![A little boy and girl sharing an apple](/assets/food-for-thought-img.jpeg)
+<figure style="float: left;">
+<img width="400px" src="/assets/food-for-thought-img.jpeg" alt="A little boy and girl sharing an apple"/>
+<figcaption align="center;">
+First published 1916 issue of National Geographic with a caption referring to Adam, Eve, and the apple. But more germane is how the image evokes childhood pleasure and the development of relationships through food
+A. W. Cutler, National Geographic Creative
+</figcaption>
+</figure>
 
 Food has become a vehicle for the exchange of culture. It serves as a gateway for new, connections and memories. These food relationships can be used strategically to help people work together and build trust.
 
@@ -13,6 +19,6 @@ Even the word ‘companion’ comes from Latin and means ‘with bread’ —�
 
 We do not as often sit around a real flame anymore, but the warmth from community and the warm plate in front of us continues to burn. With Foodnome we keep this flame alive.
 
-> “ Food is symbolic of love when words are inadequate. " - Alan D. Wolfelt
+> <p style="font-size: 2em;">“Food is symbolic of love when words are inadequate." - Alan D. Wolfelt</p>
 
 ![Guests giving a toast over dinner](/assets/food-for-thought-banner.jpeg)
