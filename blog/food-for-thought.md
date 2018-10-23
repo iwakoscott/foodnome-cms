@@ -5,9 +5,9 @@ title: Food for Thought
 ---
 For as long as there have been humans, we have been gathering around the hearth. But food is more than survival, with it we make friends, court lovers, and count our blessings. Memories are created over the warmth and aroma of a homemade meal.
 
-<figure>
+<figure style="margin: 1em 1em 0;">
 <img style="float: left; margin: 0 1em 0 0; max-width: 400px; width: 100%;" src="/assets/food-for-thought-img.jpeg" alt="A little boy and girl sharing an apple"/>
-<figcaption style="font-size: .75em; float: left; width: 100%; max-width: 350px; margin: 1em; font-style: italic;">
+<figcaption style="font-size: .75em; float: left; width: 100%; max-width: 400px; padding: 1.5em; font-style: italic; text-align: center;">
 First published 1916 issue of National Geographic with a caption referring to Adam, Eve, and the apple. But more germane is how the image evokes childhood pleasure and the development of relationships through food
 A. W. Cutler, National Geographic Creative
 </figcaption>
