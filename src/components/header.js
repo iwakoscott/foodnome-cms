@@ -13,7 +13,6 @@ const AppBarInterior = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 `;
 
 const CloseButtonContainer = styled.div`
@@ -48,8 +47,8 @@ const LinksContainer = styled.div`
 
 const LogoContainer = styled.div`
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
 `;
 
 const getRoutes = () => [
