@@ -32,7 +32,7 @@ const Video = styled.video`
     -webkit-appearance: none;
   }
 
-  &:-webkit-media-controls-play-button {
+  &::-webkit-media-controls-play-button {
     display: none !important;
     -webkit-appearance: none;
   }
