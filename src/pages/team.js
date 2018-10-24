@@ -31,7 +31,7 @@ const getTeamMembers = () => [
     name: 'Scott Iwako',
     title: 'Frontend Developer',
     description:
-      "Son of a Chef. I have an insatiable hunger to build for the web and my mom's Ramen. 🍜",
+      "Son of a Chef. I have an insatiable hunger to build for the web and my mom's Ramen 🍜",
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fscott_iwako.jpg?alt=media&token=1da4f594-218a-4fd9-b3ae-3e6ab625df00',
     linkedinURL: 'https://www.linkedin.com/in/iwakoscott/',
@@ -56,7 +56,7 @@ const getTeamMembers = () => [
   {
     name: 'Shari Brown',
     title: 'Marketing & Social Media',
-    description: 'A Dietitian in training with a love of sharing food.',
+    description: 'A Dietitian in training with a love of sharing food',
     instagramURL: 'https://www.instagram.com/naturallyfueled/?hl=en',
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fshari_brown.jpg?alt=media&token=aeec5395-0e89-41d7-be8f-668212d0d06d'
@@ -65,7 +65,7 @@ const getTeamMembers = () => [
     name: 'Geoffrey Mangalam',
     title: 'Cook Relations & Safety',
     description:
-      'Has a love for decentralization, empowerment, and keeping people safe.',
+      'Has a love for decentralization, empowerment, and keeping people safe',
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fgeoffrey_mangalam.jpg?alt=media&token=e399ef13-bbbb-42a1-84ea-91e40b52184c'
   }
@@ -88,6 +88,7 @@ const StyledCard = styled(Card)`
   margin: 1em 0;
   display: flex;
   flex-direction: column;
+  height: max-content;
 `;
 
 const ProfilePhoto = styled.img`
@@ -120,6 +121,7 @@ const SocialMediaContainer = styled.div`
 const ProfileDescription = styled.p`
   margin: 0;
   padding: 0;
+  font-size: 0.9em;
 `;
 
 const SocialMediaLink = styled.a`
