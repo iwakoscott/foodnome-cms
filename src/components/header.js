@@ -55,6 +55,10 @@ const LogoContainer = styled.div`
   width: 100%;
 `;
 
+const MenuButton = styled(Button)`
+  width: min-content;
+`;
+
 const getRoutes = () => [
   { to: '/', name: 'Home' },
   {
@@ -134,9 +138,9 @@ class Header extends React.Component {
             boxShadow: transparent ? 'none' : 'auto'
           }}>
           <AppBarInterior>
-            <Button onClick={this.handleToggle}>
+            <MenuButton onClick={this.handleToggle}>
               <FaBars color="white" size={20} />
-            </Button>
+            </MenuButton>
             <LogoContainer>
               <Link to="/">
                 <img
