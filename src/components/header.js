@@ -134,9 +134,7 @@ class Header extends React.Component {
             boxShadow: transparent ? 'none' : 'auto'
           }}>
           <AppBarInterior>
-            <Button
-              onClick={this.handleToggle}
-              style={{ width: 'min-content' }}>
+            <Button onClick={this.handleToggle}>
               <FaBars color="white" size={20} />
             </Button>
             <LogoContainer>
