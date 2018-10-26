@@ -10,6 +10,10 @@ import Drawer from '@material-ui/core/Drawer';
 import styled from 'styled-components';
 
 const AppBarInterior = styled.div`
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
