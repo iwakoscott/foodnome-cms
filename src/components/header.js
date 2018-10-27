@@ -10,6 +10,10 @@ import Drawer from '@material-ui/core/Drawer';
 import styled from 'styled-components';
 
 const AppBarInterior = styled.div`
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +53,10 @@ const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+`;
+
+const MenuButton = styled(Button)`
+  width: min-content;
 `;
 
 const getRoutes = () => [
@@ -130,11 +138,9 @@ class Header extends React.Component {
             boxShadow: transparent ? 'none' : 'auto'
           }}>
           <AppBarInterior>
-            <Button
-              onClick={this.handleToggle}
-              style={{ width: 'min-content' }}>
+            <MenuButton onClick={this.handleToggle}>
               <FaBars color="white" size={20} />
-            </Button>
+            </MenuButton>
             <LogoContainer>
               <Link to="/">
                 <img
