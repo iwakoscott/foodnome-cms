@@ -32,7 +32,7 @@ const StyledCard = styled(Card)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2em 4em 0em 4em;
+  padding: 2em 2em 0em 2em;
   margin-bottom: 3em;
   max-width: 900px;
 `;
@@ -54,7 +54,7 @@ function SignUpBanner(props) {
             style={{
               backgroundColor: '#ec008c',
               color: 'white',
-              width: '360px',
+              width: '300px',
             }}
             state={{ from: props.location.pathname }}
           >
