@@ -34,12 +34,11 @@ const IconContainer = styled.div`
 `;
 
 const DrawerInterior = styled.div`
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  width: 300px;
+  width: 275px;
 `;
 
 const LinksContainer = styled.div`
@@ -152,7 +151,9 @@ class Header extends React.Component {
                 />
               </Link>
             </LogoContainer>
-            <BecomeACookButton>{'Become a Cook!'}</BecomeACookButton>
+            <BecomeACookButton to={'/become-a-cook'}>
+              {'Become a Cook!'}
+            </BecomeACookButton>
           </AppBarInterior>
         </AppBar>
         <Drawer open={this.state.open} onClose={this.handleToggle}>

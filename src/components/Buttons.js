@@ -41,20 +41,42 @@ const BannerText = styled.h2`
   }
 `;
 
-const AnimatedButton = styled(Button)``;
+const slideDown = keyframes`
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(1px, 0, 0);
+  }
+`;
+
+const AnimatedButton = styled(Button)`
+  animation: ${slideDown} 1s ease-in;
+  animation-delay: 250ms;
+  transition: all 1s;
+`;
 
 export function BecomeACookButton({ to, children }) {
   return (
-    <Button
+    <AnimatedButton
+      style={{
+        background: '#fa5f65',
+        color: 'white',
+        margin: '0.25rem'
+      }}
       color="secondary"
       variant="contained"
       component={Link}
-      to={to}
-      style={{
-        backgroundColor: '#fa5f65',
-        color: 'white',
-        margin: '0.25rem'
-      }}>
+      to={to}>
       <div
         style={{
           display: 'grid',
@@ -77,6 +99,6 @@ export function BecomeACookButton({ to, children }) {
         />
         <BannerText>{children}</BannerText>
       </div>
-    </Button>
+    </AnimatedButton>
   );
 }
