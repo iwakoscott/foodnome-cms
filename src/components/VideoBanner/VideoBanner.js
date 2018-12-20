@@ -48,6 +48,7 @@ const ButtonText = styled.span`
   margin: 0;
   color: white;
   font-size: 2em;
+  border-color: white !important;
 
   @media (max-width: 620px), (max-height: 500px) {
     font-size: 1.5em;
@@ -80,11 +81,12 @@ export default () => (
         </div>
         <div style={{ float: 'right' }}>
           <Button
-            style={{ margin: '0.5rem' }}
+            style={{ margin: '0.5rem', borderColor: 'white' }}
             variant="outlined"
             size="large"
             component={Link}
-            to="/about">
+            to="/about"
+          >
             <ButtonText>About Us</ButtonText>
             <FaChevronCircleRight color={'white'} style={{ margin: '.5rem' }} />
           </Button>

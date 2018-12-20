@@ -1,7 +1,7 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { Link } from "gatsby";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
 const Footer = styled.footer`
   display: flex;
@@ -21,8 +21,10 @@ const LinksContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  padding: 0 0 2em;
-  max-width: 600px;
+  padding: 1.6em 0 2em;
+  background-color: #e91e63;
+  width: 100%;
+  font-weight: bolder;
 `;
 
 const StyledLink = styled(Link)`
