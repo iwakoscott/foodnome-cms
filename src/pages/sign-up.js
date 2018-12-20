@@ -65,7 +65,7 @@ class SignUp extends React.Component {
                 >
                   <DialogContent
                     style={{
-                      width: '30rem',
+                      maxWidth: '30rem',
                       display: 'flex',
                       justifyContent: 'space-between',
                       alignItems: 'center',

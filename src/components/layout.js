@@ -27,24 +27,68 @@ const Layout = ({ children, ...rest }) => (
             {
               name: 'description',
               content:
-                'A collective of Home Restaurants serving the community delicious homemade meals.'
+                'A collective of Home Restaurants serving the community delicious homemade meals.',
             },
             {
               name: 'keywords',
               content:
-                'home restaurants, food, cook, meals, meal, dish, dishes, dine, dining, dinner, lunch, breakfast'
-            }
-          ]}>
+                'home restaurants, food, cook, meals, meal, dish, dishes, dine, dining, dinner, lunch, breakfast',
+            },
+          ]}
+        >
           <html lang="en" />
+          <meta
+            name="description"
+            content="A collective of Home Restaurants serving the community delicious homemade meals."
+          />
+          <meta
+            name="keywords"
+            content="home restaurants, food, cook, meals, meal, dish, dishes, dine, dining, dinner, lunch, breakfast"
+          />
+          <meta name="application-name" content="Foodnome" />
+          <meta name="theme-color" content="#e162f8" />
+
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:url" content="https://www.foodnome.com/" />
+          <meta property="og:title" content={data.site.siteMetadata.title} />
+          <meta
+            property="og:description"
+            content="A collective of Home Restaurants serving the community delicious homemade meals."
+          />
+          <meta
+            property="og:image"
+            content="https://res.cloudinary.com/foodnome/image/upload/v1545290031/radish-banner.jpg"
+          />
+          <meta
+            property="og:image:url"
+            content="https://res.cloudinary.com/foodnome/image/upload/v1545290031/radish-banner.jpg"
+          />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:description"
+            content="A collective of Home Restaurants serving the community delicious homemade meals."
+          />
+          <meta
+            property="twitter:title"
+            content={data.site.siteMetadata.title}
+          />
+          <meta
+            property="twitter:image"
+            content="https://res.cloudinary.com/foodnome/image/upload/v1545290031/radish-banner.jpg"
+          />
         </Helmet>
+
         <div
           style={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
             height: '100%',
-            width: '100%'
-          }}>
+            width: '100%',
+          }}
+        >
           <Header
             siteTitle={data.site.siteMetadata.title}
             themeColor={data.site.siteMetadata.themeColor}
@@ -59,7 +103,7 @@ const Layout = ({ children, ...rest }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
