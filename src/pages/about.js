@@ -53,7 +53,7 @@ const Overlay = styled.div`
 
 const Article = styled.article`
   margin: 1em auto;
-  padding: 0 1em;
+  padding: 1em;
   max-width: 750px;
 `;
 
@@ -62,7 +62,7 @@ const AnimatedHeroText = styled(HeroText)`
 `;
 
 const SubTitle = styled.h3`
-  font-size: 2em;
+  font-size: ${props => (props.fontSize ? props.fontSize : '2em')};
   color: ${props => (props.color ? props.color : 'black')};
   @media (max-width: 500px) {
     font-size: 1.75em;
@@ -100,14 +100,85 @@ export default props => (
             <PhotoBanner src={RadishBanner} alt="foodnome painting" />
             <Overlay />
             <AnimatedHeroText style={{ position: 'absolute', bottom: 0 }}>
-              Origins <br />
+              About <br />
               <br />
               We found our roots in the rich culture of small-town Davis, CA.
             </AnimatedHeroText>
           </HeroContainer>
           <Article>
             <section>
+              <SubTitle color={'black'}>Mission Statement</SubTitle>
               <p>
+                We believe that every community has a right to
+                self-determination, both in terms of economic opportunity and
+                access to healthy food. Foodnome aims to empower local home
+                cooks to make a living cooking what they love, and connect these
+                passionate cooks with their hungry neighbors.
+              </p>
+
+              <section>
+                <SubTitle color={'black'} fontSize={'1.5em'}>
+                  Economic Empowerment
+                </SubTitle>
+                <ul>
+                  <li>
+                    The average cost to open a restaurant in California is
+                    almost $250,000. Until now, talented cooks lacking these
+                    start-up funds have been unable to start a food business.{' '}
+                  </li>
+                  <li>
+                    By pushing for legislative change and creating a home cooked
+                    food marketplace, Foodnome aims to enable these aspiring
+                    cooks to earn a steady income.
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <SubTitle color={'black'} fontSize={'1.5em'}>
+                  Public Health Improvement
+                </SubTitle>
+                <ul>
+                  <li>
+                    In many neighborhoods, fast food is one of the only options
+                    for affordable local meals, and community nutrition suffers
+                    as a result.{' '}
+                  </li>
+                  <li>
+                    In supporting home restaurant businesses, we strive to
+                    expand access to healthy meals in these areas.
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <SubTitle color={'black'} fontSize={'1.5em'}>
+                  Community Building
+                </SubTitle>
+                <ul>
+                  <li>
+                    The presence of a select few permitted restaurants limits
+                    the potential for neighbors to connect with each other
+                    around food. In the case of large restaurant chains, they
+                    are often not invested in developing the local community.
+                  </li>
+                  <li>
+                    Home restaurants facilitate face-to-face interactions
+                    between neighbors, encouraging cultural exchange, personal
+                    connection, and deepening of community bonds. We hope to be
+                    a catalyst for building these relationships, and help
+                    communities reclaim their food systems.
+                  </li>
+                </ul>
+              </section>
+            </section>
+            <hr />
+            <section>
+              <SubTitle color={data.site.siteMetadata.themeColor}>
+                Our Story
+              </SubTitle>
+              <p>
+                We found our roots in the rich culture of small-town Davis, CA.
                 Here vibrant agricultural innovations and a passion for
                 sustainability flow into an imaginative food scene. We strive to
                 unearth the underground food movement, uproot traditional food
