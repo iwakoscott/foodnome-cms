@@ -49,8 +49,8 @@ const ButtonText = styled.span`
   color: white;
   font-size: 2em;
 
-  @media (max-width: 500px), (max-height: 500px) {
-    font-size: 1em;
+  @media (max-width: 620px), (max-height: 500px) {
+    font-size: 1.5em;
   }
 `;
 
