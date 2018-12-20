@@ -48,6 +48,7 @@ const ButtonText = styled.span`
   margin: 0;
   color: white;
   font-size: 2em;
+  border-color: white !important;
 
   @media (max-width: 620px), (max-height: 500px) {
     font-size: 1.5em;
@@ -84,7 +85,8 @@ export default () => (
             variant="outlined"
             size="large"
             component={Link}
-            to="/about">
+            to="/about"
+          >
             <ButtonText>About Us</ButtonText>
             <FaChevronCircleRight color={'white'} style={{ margin: '.5rem' }} />
           </Button>

@@ -32,7 +32,7 @@ const CardImage = styled.img`
 `;
 
 const CardContainer = styled(Card)`
-  margin: 1em;
+  margin: 2em 1em;
   padding: 1em;
   max-width: 320px;
   display: flex;
@@ -51,7 +51,7 @@ const Deck = styled.div`
 
 const Title = styled.h2`
   font-size: 2.5em;
-  margin: 1rem;
+  margin: 1em;
   color: #2f3640;
   @media (max-width: 400px), (max-height: 400px) {
     font-size: 1.5em;
