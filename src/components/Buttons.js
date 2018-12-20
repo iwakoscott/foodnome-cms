@@ -69,7 +69,7 @@ export function BecomeACookButton({ to, children }) {
   return (
     <AnimatedButton
       style={{
-        background: '#fa5f65',
+        background: '#32b5cf',
         color: 'white',
         margin: '0.25rem'
       }}
