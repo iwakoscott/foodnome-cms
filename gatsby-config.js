@@ -3,6 +3,7 @@ module.exports = {
     title: 'Foodnome',
     themeColor: '#ec008c',
     email: 'info@foodnome.com',
+    siteUrl: 'https://www.foodnome.com/'
     facebookURL: 'https://www.facebook.com/Foodnome/',
     pinterestURL: 'https://www.pinterest.com/foodnome/pins/',
     instagramURL: 'https://www.instagram.com/foodnome/',
@@ -77,6 +78,8 @@ module.exports = {
     `gatsby-plugin-favicon`,
     `@wapps/gatsby-plugin-material-ui`,
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
