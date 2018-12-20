@@ -84,8 +84,8 @@ export default () => (
             variant="outlined"
             size="large"
             component={Link}
-            to="/story">
-            <ButtonText>our story</ButtonText>
+            to="/about">
+            <ButtonText>About Us</ButtonText>
             <FaChevronCircleRight color={'white'} style={{ margin: '.5rem' }} />
           </Button>
         </div>

@@ -65,8 +65,8 @@ const getRoutes = () => [
     name: 'Blog'
   },
   {
-    to: '/story',
-    name: 'Story'
+    to: '/about',
+    name: 'About'
   },
   {
     to: '/team',
@@ -89,6 +89,7 @@ class Header extends React.Component {
 
   isTransparent = path =>
     ['/', '/story/', '/story', '/ab-626', '/ab-626/'].includes(path);
+
 
   handleScroll = () => {
     const scrollPos = window.pageYOffset;
