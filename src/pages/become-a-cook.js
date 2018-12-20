@@ -31,7 +31,7 @@ export default props => (
           maxWidth: 700,
           width: '100%'
         }}>
-        <h1>Ready to Host a Meal? {'🍲'}</h1>
+        <h1>Cook From Home With Foodnome {'🍳'}</h1>
         <img src={CookAvatar} alt="Cook avatar." style={{ width: 200 }} />
         <p>
           This is the beginning of a revolution in the way we feed our
