@@ -7,7 +7,7 @@ import {
   Button
 } from '@material-ui/core';
 import Layout from '../components/layout';
-import CookAvatar from '../images/other/Cook.png';
+import YeahGif from '../images/gifs/yeah.gif';
 import { FaPaperPlane } from 'react-icons/fa';
 
 export default props => (
@@ -32,7 +32,7 @@ export default props => (
           width: '100%'
         }}>
         <h1>Cook From Home With Foodnome {'🍳'}</h1>
-        <img src={CookAvatar} alt="Cook avatar." style={{ width: 200 }} />
+        <img src={YeahGif} alt="Cook avatar." style={{ width: 200 }} />
         <p>
           This is the beginning of a revolution in the way we feed our
           communities. Make a living making what you love, cook on your own
@@ -83,7 +83,7 @@ export default props => (
 
             <FormControl fullWidth>
               <InputLabel htmlFor="what-excites-you" style={{ color: 'black' }}>
-                What excites you about cooking in your own restaurant?
+                Is there anything you’d like to share with us?
               </InputLabel>
               <Input
                 id="what-excites-you"
