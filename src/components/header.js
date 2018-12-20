@@ -5,7 +5,7 @@ import FoodnomeLogo from '../images/logos/FoodnomeCarrot_WordOnly_White_Transpar
 import { FaBars, FaInstagram, FaPinterest, FaFacebook } from 'react-icons/fa';
 import Button from '@material-ui/core/Button';
 import { StaticQuery, graphql } from 'gatsby';
-import { CloseButton, TextButton } from './Buttons';
+import { CloseButton, TextButton, BecomeACookButton } from './Buttons';
 import Drawer from '@material-ui/core/Drawer';
 import styled from 'styled-components';
 
@@ -34,12 +34,11 @@ const IconContainer = styled.div`
 `;
 
 const DrawerInterior = styled.div`
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  width: 300px;
+  width: 275px;
 `;
 
 const LinksContainer = styled.div`
@@ -152,6 +151,9 @@ class Header extends React.Component {
                 />
               </Link>
             </LogoContainer>
+            <BecomeACookButton to={'/become-a-cook'}>
+              {'Become a Cook!'}
+            </BecomeACookButton>
           </AppBarInterior>
         </AppBar>
         <Drawer open={this.state.open} onClose={this.handleToggle}>

@@ -24,7 +24,7 @@ const BannerText = styled.h2`
 `;
 
 const StyledCard = styled(Card)`
-  padding: 1em;
+  padding: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
