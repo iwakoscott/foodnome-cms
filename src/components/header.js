@@ -74,7 +74,7 @@ const getRoutes = () => [
   },
   {
     to: '/ab-626',
-    name: 'AB-626'
+    name: 'AB 626'
   }
 ];
 
@@ -88,7 +88,7 @@ class Header extends React.Component {
   }
 
   isTransparent = path =>
-    ['/', '/story/', '/story', '/ab-626', '/ab-626/'].includes(path);
+    ['/', '/about/', '/about', '/ab-626', '/ab-626/'].includes(path);
 
 
   handleScroll = () => {
