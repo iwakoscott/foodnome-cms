@@ -22,7 +22,7 @@ const LinksContainer = styled.div`
   align-items: center;
   width: 100%;
   padding: 1.6em 0 2em;
-  background-color: #e91e63;
+  background-color: rgb(50, 181, 207);
   width: 100%;
   font-weight: bolder;
 `;
