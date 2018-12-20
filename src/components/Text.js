@@ -6,7 +6,7 @@ export const HeroText = styled.h2`
   max-width: 950px;
   margin: 0.5em;
 
-  @media (max-width: 500px), (max-height: 500px) {
-    font-size: 1.75em;
+  @media (max-width: 620px), (max-height: 500px) {
+    font-size: 1.8em;
   }
 `;

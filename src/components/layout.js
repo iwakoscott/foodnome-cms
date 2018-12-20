@@ -41,7 +41,9 @@ const Layout = ({ children, ...rest }) => (
           style={{
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            height: '100%',
+            width: '100%'
           }}>
           <Header
             siteTitle={data.site.siteMetadata.title}
