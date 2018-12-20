@@ -81,7 +81,7 @@ export default () => (
         </div>
         <div style={{ float: 'right' }}>
           <Button
-            style={{ margin: '0.5rem' }}
+            style={{ margin: '0.5rem', borderColor: 'white' }}
             variant="outlined"
             size="large"
             component={Link}
