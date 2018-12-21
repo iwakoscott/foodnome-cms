@@ -88,7 +88,7 @@ const keywords = [
   'Governor',
   'meals',
   'legal',
-  'Davis'
+  'Davis',
 ];
 
 export default props => (
@@ -117,14 +117,16 @@ export default props => (
             <a
               target="_BLANK"
               rel="noopener noreferrer"
-              href="https://a56.asmdc.org/">
+              href="https://a56.asmdc.org/"
+            >
               Eduardo Garcia
             </a>{' '}
             (CA District 56 Assemblyman) and the nonprofit{' '}
             <a
               target="_BLANK"
               rel="noopener noreferrer"
-              href="https://www.cookalliance.org/">
+              href="https://www.cookalliance.org/"
+            >
               COOK Alliance
             </a>{' '}
             (Creating Opportunity, Opening Kitchens). AB 626 is an extension of
@@ -173,8 +175,8 @@ export default props => (
               Food is prepared, cooked, and served or delivered on the same day.
             </li>
             <li>
-              ood sales are limited to 30 meals per day or 60 meals per week (or
-              equivalent meal components)
+              Food sales are limited to 30 meals per day or 60 meals per week
+              (or equivalent meal components)
             </li>
             <li>
               The restaurant has no more than $50,000 verifiable gross annual
@@ -186,7 +188,8 @@ export default props => (
             <a
               href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB626"
               target="_BLANK"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               Click Here
             </a>
             .

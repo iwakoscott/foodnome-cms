@@ -22,7 +22,7 @@ const Layout = ({ children, ...rest }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title={'Foodnome - Unearth the Food Underground'}
           meta={[
             {
               name: 'description',
@@ -32,18 +32,19 @@ const Layout = ({ children, ...rest }) => (
             {
               name: 'keywords',
               content:
-                'home restaurants, food, cook, meals, meal, dish, dishes, dine, dining, dinner, lunch, breakfast',
+                'home restaurants, ab626, cook, meals, meal, dish, dishes, dine, dining, dinner, lunch, breakfast',
             },
           ]}
         >
           <html lang="en" />
+          <title>Foodnome - Unearth the Food Underground</title>
           <meta
             name="description"
-            content="A collective of Home Restaurants serving the community delicious homemade meals."
+            content="A collective of Home Restaurants serving the community delicious homemade meals. Come grab a plate!"
           />
           <meta
             name="keywords"
-            content="home restaurants, food, cook, meals, meal, dish, dishes, dine, dining, dinner, lunch, breakfast"
+            content="home restaurants, ab626, food, cook, meals, meal, dish, dishes, dine, dining, dinner, lunch, breakfast"
           />
           <meta name="application-name" content="Foodnome" />
           <meta name="theme-color" content="#e162f8" />
