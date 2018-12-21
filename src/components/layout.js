@@ -22,7 +22,7 @@ const Layout = ({ children, ...rest }) => (
     render={data => (
       <>
         <Helmet
-          title={'Foodnome - Unearth the Food Underground'}
+          title={'Foodnome - Dig in to the Food Underground'}
           meta={[
             {
               name: 'description',
@@ -37,7 +37,7 @@ const Layout = ({ children, ...rest }) => (
           ]}
         >
           <html lang="en" />
-          <title>Foodnome - Unearth the Food Underground</title>
+          <title>Foodnome - Dig in to the Food Underground</title>
           <meta
             name="description"
             content="A collective of Home Restaurants serving the community delicious homemade meals. Come grab a plate!"

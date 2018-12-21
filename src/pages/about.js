@@ -95,7 +95,7 @@ export default props => (
     `}
     render={data => (
       <Layout {...props}>
-        <div>
+        <div className="igtDpy">
           <HeroContainer>
             <PhotoBanner src={RadishBanner} alt="foodnome painting" />
             <Overlay />
@@ -242,7 +242,8 @@ export default props => (
                 <a
                   rel="noopener noreferrer"
                   target="_BLANK"
-                  href="https://www.cookalliance.org/">
+                  href="https://www.cookalliance.org/"
+                >
                   COOK Alliance
                 </a>{' '}
                 to pass Assembly Bill 626 and legalize the sale of homemade
@@ -278,7 +279,8 @@ export default props => (
                 <a
                   rel="noopener noreferrer"
                   target="_BLANK"
-                  href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB626">
+                  href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB626"
+                >
                   AB-626
                 </a>{' '}
                 empowering home cooks to sell food out of their own kitchens

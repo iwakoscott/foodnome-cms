@@ -4,7 +4,7 @@ import {
   FormControl,
   Input,
   InputLabel,
-  Button
+  Button,
 } from '@material-ui/core';
 import Layout from '../components/layout';
 import YeahGif from '../images/gifs/yeah.gif';
@@ -13,14 +13,16 @@ import { FaPaperPlane } from 'react-icons/fa';
 export default props => (
   <Layout {...props}>
     <div
+      className="igtDpy"
       style={{
         height: '100%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 100,
-        marginBottom: 50
-      }}>
+        paddingTop: 100,
+        marginBottom: 50,
+      }}
+    >
       <Paper
         style={{
           padding: '2em',
@@ -29,8 +31,9 @@ export default props => (
           justifyContent: 'center',
           alignItems: 'center',
           maxWidth: 700,
-          width: '100%'
-        }}>
+          width: '100%',
+        }}
+      >
         <h1>Cook From Home With Foodnome {'🍳'}</h1>
         <img src={YeahGif} alt="Cook avatar." style={{ width: 200 }} />
         <p>
@@ -42,13 +45,15 @@ export default props => (
         <form
           action="https://formspree.io/info@foodnome.com"
           method="POST"
-          style={{ width: '100%' }}>
+          style={{ width: '100%' }}
+        >
           <div
             style={{
               display: 'flex',
               flexDirection: 'column',
-              width: '100%'
-            }}>
+              width: '100%',
+            }}
+          >
             <section>
               <FormControl fullWidth>
                 <InputLabel htmlFor="name" style={{ color: 'black' }}>
@@ -98,7 +103,8 @@ export default props => (
               type="submit"
               variant="contained"
               size="large"
-              style={{ float: 'right', background: '#ec008c', color: 'white' }}>
+              style={{ float: 'right', background: '#ec008c', color: 'white' }}
+            >
               <span style={{ margin: '0 0.25rem' }}>Apply</span>
               <FaPaperPlane
                 color={'white'}

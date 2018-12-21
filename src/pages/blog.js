@@ -24,30 +24,34 @@ export default function Blog({ data, ...rest }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <Layout {...rest}>
-      <MainContainer>
-        {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => {
-            return (
-              <Card key={post.id} style={{ padding: '1em', margin: '1em 0' }}>
-                <CardTitle>
-                  <Link
+      <div className="igtDpy">
+        <MainContainer>
+          {posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }) => {
+              return (
+                <Card key={post.id} style={{ padding: '1em', margin: '1em 0' }}>
+                  <CardTitle>
+                    <Link
+                      to={post.frontmatter.path}
+                      style={{ textDecoration: 'none', color: 'black' }}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                  </CardTitle>
+                  <Date>{post.frontmatter.date}</Date>
+                  <p>{post.excerpt}</p>
+                  <LinkButton
+                    style={{ float: 'right' }}
                     to={post.frontmatter.path}
-                    style={{ textDecoration: 'none', color: 'black' }}>
-                    {post.frontmatter.title}
-                  </Link>
-                </CardTitle>
-                <Date>{post.frontmatter.date}</Date>
-                <p>{post.excerpt}</p>
-                <LinkButton
-                  style={{ float: 'right' }}
-                  to={post.frontmatter.path}>
-                  Read more
-                </LinkButton>
-              </Card>
-            );
-          })}
-      </MainContainer>
+                  >
+                    Read more
+                  </LinkButton>
+                </Card>
+              );
+            })}
+        </MainContainer>
+      </div>
     </Layout>
   );
 }

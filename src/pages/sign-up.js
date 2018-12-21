@@ -1,14 +1,10 @@
 import React from 'react';
-import {
-  Dialog,
-  TextField,
-  DialogActions,
-  DialogContent,
-} from '@material-ui/core';
+import { Paper, TextField } from '@material-ui/core';
 import { TextButton } from '../components/Buttons';
 import Button from '@material-ui/core/Button';
 import { graphql, StaticQuery } from 'gatsby';
 import Layout from '../components/layout';
+import YeahGif from '../images/other/sticker-7.png';
 
 class SignUp extends React.Component {
   constructor(props) {
@@ -35,7 +31,7 @@ class SignUp extends React.Component {
     const { EMAIL, FNAME, LNAME, MMERGE4 } = this.state;
     return (
       <Layout {...this.props}>
-        <div style={{ minHeight: '100vh' }}>
+        <div style={{ minHeight: '100vh' }} className="igtDpy">
           <StaticQuery
             query={graphql`
               query siteThemeColor {
@@ -50,20 +46,25 @@ class SignUp extends React.Component {
               <div
                 style={{
                   height: '100%',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginTop: 100,
+                  marginBottom: 50,
                 }}
               >
-                <Dialog
+                <Paper
                   style={{
+                    padding: '2em',
                     display: 'flex',
-                    alignItems: 'center',
+                    flexDirection: 'column',
                     justifyContent: 'center',
+                    alignItems: 'center',
+                    maxWidth: 700,
+                    width: '100%',
                   }}
-                  aria-labelledby="sign-up-modal"
-                  aria-describedby="sign-up-modal"
-                  open={true}
-                  onClose={this.onClose}
                 >
-                  <DialogContent
+                  <div
                     style={{
                       maxWidth: '30rem',
                       display: 'flex',
@@ -80,12 +81,17 @@ class SignUp extends React.Component {
                         stay in the loop!
                       </h1>
                     </div>
+                    <img
+                      src={YeahGif}
+                      alt="Cook avatar."
+                      style={{ width: 300 }}
+                    />
+
                     <form
                       style={{
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'space-between',
-                        maxWidth: '30em',
                         margin: '0 auto',
                       }}
                       action="https://foodnome.us17.list-manage.com/subscribe/post?u=eb55602632b381ff0f3bdd8aa&amp;id=6da5658005"
@@ -99,7 +105,6 @@ class SignUp extends React.Component {
                         <TextField
                           style={{ marginTop: '6px' }}
                           fullWidth
-                          variant="outlined"
                           required
                           type="email"
                           name="EMAIL"
@@ -112,7 +117,6 @@ class SignUp extends React.Component {
                         <TextField
                           style={{ marginTop: '6px' }}
                           fullWidth
-                          variant="outlined"
                           required
                           type="text"
                           name="FNAME"
@@ -126,7 +130,6 @@ class SignUp extends React.Component {
                         <TextField
                           style={{ marginTop: '6px' }}
                           fullWidth
-                          variant="outlined"
                           required
                           type="text"
                           name="LNAME"
@@ -139,7 +142,6 @@ class SignUp extends React.Component {
                         <TextField
                           style={{ marginTop: '6px' }}
                           fullWidth
-                          variant="outlined"
                           type="text"
                           name="MMERGE4"
                           id="mce-MMERGE4"
@@ -172,7 +174,7 @@ class SignUp extends React.Component {
                           />
                         </div>
                       </div>
-                      <div style={{ marginTop: '6px' }}>
+                      <div style={{ marginTop: '12px' }}>
                         <input type="checkbox" required />{' '}
                         <label className="small">
                           {' '}
@@ -188,14 +190,13 @@ class SignUp extends React.Component {
                         </label>
                       </div>
                     </form>
-                  </DialogContent>
-
-                  <DialogActions
+                  </div>
+                  <div
                     style={{
                       float: 'right',
                       display: 'flex',
                       width: '96%',
-                      margin: '0em auto 1em auto',
+                      margin: '2em auto 1em auto',
                       justifyContent: 'space-between',
                     }}
                   >
@@ -213,8 +214,8 @@ class SignUp extends React.Component {
                     >
                       Subscribe
                     </Button>
-                  </DialogActions>
-                </Dialog>
+                  </div>
+                </Paper>
               </div>
             )}
           />

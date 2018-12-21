@@ -25,7 +25,7 @@ const getTeamMembers = () => [
       'Advocate for food justice & homegrown dining with a love for cooking and the food underground',
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fakshay_prabhu.jpeg?alt=media&token=3bc3b375-4454-40e2-8f15-cbd90b4923ef',
-    linkedinURL: 'https://www.linkedin.com/in/akshay-prabhu-9b1549bb/'
+    linkedinURL: 'https://www.linkedin.com/in/akshay-prabhu-9b1549bb/',
   },
   {
     name: 'Scott Iwako',
@@ -35,7 +35,7 @@ const getTeamMembers = () => [
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fscott_iwako.jpg?alt=media&token=1da4f594-218a-4fd9-b3ae-3e6ab625df00',
     linkedinURL: 'https://www.linkedin.com/in/iwakoscott/',
-    twitterURL: 'https://twitter.com/theisomorphic'
+    twitterURL: 'https://twitter.com/theisomorphic',
   },
   {
     name: 'Hank Teicheira',
@@ -44,14 +44,14 @@ const getTeamMembers = () => [
       'Farmer and winemaker converted his passion to tech to change the food system in a larger way',
     photoURL:
       'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fhank_teicheira.jpeg?alt=media&token=a676a3cd-040b-48a7-b0d7-cdca5f9a714f',
-    linkedinURL: 'https://www.linkedin.com/in/hteicheira/'
+    linkedinURL: 'https://www.linkedin.com/in/hteicheira/',
   },
   {
     name: 'Li Schmidt',
     title: 'Supply Chain Manager',
     description: 'Helping home cooks connect with local farmers + producers',
     photoURL:
-      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fli_schmidt.jpg?alt=media&token=a026cc5e-f884-4e6f-8db0-4e958e14f99a'
+      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fli_schmidt.jpg?alt=media&token=a026cc5e-f884-4e6f-8db0-4e958e14f99a',
   },
   {
     name: 'Shari Brown',
@@ -59,7 +59,7 @@ const getTeamMembers = () => [
     description: 'A Dietitian in training with a love of sharing food',
     instagramURL: 'https://www.instagram.com/naturallyfueled/?hl=en',
     photoURL:
-      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fshari_brown.jpg?alt=media&token=aeec5395-0e89-41d7-be8f-668212d0d06d'
+      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fshari_brown.jpg?alt=media&token=aeec5395-0e89-41d7-be8f-668212d0d06d',
   },
   {
     name: 'Geoffrey Mangalam',
@@ -67,8 +67,8 @@ const getTeamMembers = () => [
     description:
       'Has a love for decentralization, empowerment, and keeping people safe',
     photoURL:
-      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fgeoffrey_mangalam.jpg?alt=media&token=e399ef13-bbbb-42a1-84ea-91e40b52184c'
-  }
+      'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/teams%2Fhead-shots%2Fgeoffrey_mangalam.jpg?alt=media&token=e399ef13-bbbb-42a1-84ea-91e40b52184c',
+  },
 ];
 
 const Deck = styled.div`
@@ -88,7 +88,7 @@ const StyledCard = styled(Card)`
   margin: 1em 0;
   display: flex;
   flex-direction: column;
-  height: max-content;
+  height: 460px;
 `;
 
 const ProfilePhoto = styled.img`
@@ -132,15 +132,17 @@ const SocialMediaLink = styled.a`
 export default props => (
   <Layout {...props}>
     <div
+      className="igtDpy"
       style={{
-        margin: '56px 0',
-        padding: '1em',
+        margin: '56px 0 0 0',
+        padding: '1em 1em 56px 1em',
         display: 'flex',
         alignContent: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        minHeight: '100vh'
-      }}>
+        minHeight: '100vh',
+      }}
+    >
       <h1 style={{ alignSelf: 'center', margin: '1em 0' }}>Meet the team!</h1>
       <StaticQuery
         query={graphql`
@@ -165,7 +167,8 @@ export default props => (
                       color={data.site.siteMetadata.themeColor}
                       rel="noopener noreferrer"
                       target="_BLANK"
-                      href={profile.linkedinURL}>
+                      href={profile.linkedinURL}
+                    >
                       <FaLinkedin size={20} />
                     </SocialMediaLink>
                   )}
@@ -174,7 +177,8 @@ export default props => (
                       color={data.site.siteMetadata.themeColor}
                       rel="noopener noreferrer"
                       target="_BLANK"
-                      href={profile.twitterURL}>
+                      href={profile.twitterURL}
+                    >
                       <FaTwitter size={20} />
                     </SocialMediaLink>
                   )}
@@ -183,7 +187,8 @@ export default props => (
                       color={data.site.siteMetadata.themeColor}
                       rel="noopener noreferrer"
                       target="_BLANK"
-                      href={profile.instagramURL}>
+                      href={profile.instagramURL}
+                    >
                       <FaInstagram size={20} />
                     </SocialMediaLink>
                   )}
