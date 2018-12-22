@@ -20,6 +20,15 @@ module.exports = {
     pressLogos: [
       {
         width: 256,
+        height: 87.88,
+        imageURL:
+          'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Fnpr.png?alt=media&token=6520da11-eccf-4a4d-ba7d-1bc037428810',
+        alt: 'NPM CapRadio',
+        linkURL:
+          'http://www.capradio.org/articles/2018/12/21/if-counties-get-on-board-selling-food-from-your-own-kitchen-could-become-legal-in-california/?fbclid=IwAR3fVTYNWg0UOwN2SGWcobbRXxVXn1aPx52uoXhxd8FvSWjc6PIAAL0TPGg'
+      },
+      {
+        width: 256,
         height: 32.1,
         imageURL:
           'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Flatimes.png?alt=media&token=338a7cc5-9d69-4ebd-8719-699360dc7f4a',
