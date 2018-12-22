@@ -22,9 +22,15 @@ const LinksContainer = styled.div`
   align-items: center;
   width: 100%;
   padding: 1.6em 0 2em;
-  background-color: rgb(64, 64, 64);
   width: 100%;
   font-weight: bolder;
+  background: rgb(129, 54, 98);
+  background: linear-gradient(
+    0deg,
+    rgba(129, 54, 98, 1) 31%,
+    rgba(172, 42, 119, 1) 60%,
+    rgba(236, 0, 140, 1) 100%
+  );
 `;
 
 const StyledLink = styled(Link)`
