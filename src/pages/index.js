@@ -47,6 +47,7 @@ const Deck = styled.div`
   justify-content: space-evenly;
   text-align: center;
   margin-bottom: 44px;
+  max-width: 1350px;
 `;
 
 const Title = styled.h2`
