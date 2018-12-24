@@ -39,10 +39,11 @@ const StyledLink = styled(Link)`
 `;
 
 const PressContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  justify-items: center;
+  grid-gap: 1em;
   width: 100%;
-  flex-wrap: wrap;
   align-items: center;
   padding: 2em 0;
 `;
