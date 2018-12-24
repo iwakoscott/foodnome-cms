@@ -93,6 +93,13 @@ module.exports = {
     ]
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-131330059-1',
+        head: true
+      }
+    },
     `gatsby-plugin-favicon`,
     `@wapps/gatsby-plugin-material-ui`,
     `gatsby-plugin-styled-components`,
