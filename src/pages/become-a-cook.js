@@ -4,7 +4,7 @@ import {
   FormControl,
   Input,
   InputLabel,
-  Button,
+  Button
 } from '@material-ui/core';
 import Layout from '../components/layout';
 import YeahGif from '../images/gifs/yeah.gif';
@@ -20,9 +20,8 @@ export default props => (
         justifyContent: 'center',
         alignItems: 'center',
         paddingTop: 100,
-        marginBottom: 50,
-      }}
-    >
+        marginBottom: 50
+      }}>
       <Paper
         style={{
           padding: '2em',
@@ -31,9 +30,8 @@ export default props => (
           justifyContent: 'center',
           alignItems: 'center',
           maxWidth: 700,
-          width: '100%',
-        }}
-      >
+          width: '100%'
+        }}>
         <h1>Cook From Home With Foodnome {'🍳'}</h1>
         <img src={YeahGif} alt="Cook avatar." style={{ width: 200 }} />
         <p>
@@ -43,30 +41,39 @@ export default props => (
           below and we will get back to you as soon as we can!
         </p>
         <form
-          action="https://formspree.io/akshay@foodnome.com"
-          method="POST"
-          style={{ width: '100%' }}
-        >
+          action="https://foodnome.us17.list-manage.com/subscribe/post?u=eb55602632b381ff0f3bdd8aa&amp;id=6da5658005"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          novalidate
+          style={{ width: '100%' }}>
           <div
             style={{
               display: 'flex',
               flexDirection: 'column',
-              width: '100%',
-            }}
-          >
+              width: '100%'
+            }}>
             <section>
               <FormControl fullWidth>
                 <InputLabel htmlFor="name" style={{ color: 'black' }}>
-                  Name
+                  First Name
                 </InputLabel>
-                <Input id="name" name="name" required />
+                <Input name="FNAME" id="name" required />
+              </FormControl>
+
+              <FormControl fullWidth>
+                <InputLabel htmlFor="name" style={{ color: 'black' }}>
+                  Last Name
+                </InputLabel>
+                <Input name="LNAME" id="name" required />
               </FormControl>
 
               <FormControl fullWidth>
                 <InputLabel htmlFor="email" style={{ color: 'black' }}>
                   Email
                 </InputLabel>
-                <Input id="email" name="_replyto" required />
+                <Input type="email" name="EMAIL" id="email" required />
               </FormControl>
             </section>
 
@@ -75,14 +82,14 @@ export default props => (
                 <InputLabel htmlFor="phone-number" style={{ color: 'black' }}>
                   Phone Number
                 </InputLabel>
-                <Input id="phone-number" name="phone" required />
+                <Input id="phone-number" name="PHONE" required />
               </FormControl>
 
               <FormControl fullWidth>
                 <InputLabel htmlFor="zip-code" style={{ color: 'black' }}>
                   Zip Code
                 </InputLabel>
-                <Input id="zip-code" name="zipcode" required />
+                <Input id="zip-code" name="ZIPCODE" required />
               </FormControl>
             </section>
 
@@ -90,12 +97,7 @@ export default props => (
               <InputLabel htmlFor="what-excites-you" style={{ color: 'black' }}>
                 Is there anything you’d like to share with us?
               </InputLabel>
-              <Input
-                id="what-excites-you"
-                name="what-excites-you"
-                multiline
-                rows={10}
-              />
+              <Input id="what-excites-you" name="SHARE" multiline rows={10} />
             </FormControl>
           </div>
           <section style={{ padding: '1em' }}>
@@ -103,8 +105,7 @@ export default props => (
               type="submit"
               variant="contained"
               size="large"
-              style={{ float: 'right', background: '#ec008c', color: 'white' }}
-            >
+              style={{ float: 'right', background: '#ec008c', color: 'white' }}>
               <span style={{ margin: '0 0.25rem' }}>Apply</span>
               <FaPaperPlane
                 color={'white'}
