@@ -23,9 +23,9 @@ module.exports = {
         height: 87.88,
         imageURL:
           'https://firebasestorage.googleapis.com/v0/b/foodnome-cms.appspot.com/o/logos%2Fpress%2Fnpr.png?alt=media&token=6520da11-eccf-4a4d-ba7d-1bc037428810',
-        alt: 'NPM CapRadio',
+        alt: 'NPR',
         linkURL:
-          'http://www.capradio.org/articles/2018/12/21/if-counties-get-on-board-selling-food-from-your-own-kitchen-could-become-legal-in-california/?fbclid=IwAR3fVTYNWg0UOwN2SGWcobbRXxVXn1aPx52uoXhxd8FvSWjc6PIAAL0TPGg'
+          'https://www.npr.org/sections/thesalt/2019/01/17/685626391/selling-food-from-your-kitchen-is-legal-in-california-but-theres-a-catch?utm_source=facebook.com&utm_medium=social&utm_campaign=npr&utm_term=nprnews&utm_content=20190117&fbclid=IwAR0zA4cMyg3Fe3kK6wGj8P76ypjOGsKaaamZeP4cxxE_RbeRxTeZhV6qEVk'
       },
       {
         width: 256,
